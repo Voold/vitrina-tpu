@@ -1,0 +1,212 @@
+.role_list{
+    width: 307px;
+    height: 69px;
+    border-radius: 7px;
+    text-align:center;
+    justify-content:center;
+    color: rgba(0, 0, 0, 0.4);
+font-family: inter;
+font-size: 28px;
+font-weight: 700;
+line-height: 35px;
+letter-spacing: 0%;
+margin-top:25px
+}
+/* edit */
+
+.edit{ 
+    background: rgba(29, 25, 25, 0.1);
+    width: 290px;
+    height: 69px;
+    text-align:center;
+    justify-content:center;
+    color: rgba(0, 0, 0, 0.4);
+    font-family: inter;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0%;
+    border:none;
+    cursor:pointer;
+    border-radius: 7px;
+    padding-left:10px;
+}
+/* popup  */
+.castom_modal{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  overflow-y:hidden;
+  transition: opacity 0.3s;
+  z-index:999;
+  backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.12);
+}
+/* реконструированно под личные нужды */
+.modal_{
+    border-radius: 20px;
+    width:59.09%;
+    height:100%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:white;
+    
+  }
+  .move_modal{
+  }
+  .move_modal>.header {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    padding-top:70px;
+  
+    color: rgb(40, 190, 70);
+    font-family: inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0%;
+  
+  }
+  
+  .move_modal>.content {
+    width: 80%;
+    margin-right: auto;
+   margin-left:auto;
+    
+  }
+  
+  .move_modal>.content>p {
+    color: rgba(0, 0, 0, 0.4);
+    font-family: inter;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align:left;
+
+  }
+  
+  .move_modal>.actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .move_modal>.close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
+  
+  .popup2-content{
+    border-radius: 20px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    width: 59.09%;
+    height: 100%; 
+  }
+  
+  
+  
+  /* Список ролей */
+.Mylist {
+  display:inline;
+  float:left;
+  flex-direction: row;
+  word-wrap: break-word;
+  margin-left: 27px;
+  margin-right:auto;  
+}
+/* bottonы */
+.modal_>.actions1 {
+  width: 45%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+}
+.batton_add_project_delete {
+  
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+.batton_add_project_delete>button {
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 212px;
+  height: 52px;
+  margin-top:35px;
+ 
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  background: rgb(198, 3, 3);
+  transition: 500ms;
+
+  color: rgb(255, 255, 255);
+  font-family: ALS Sirius;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  transition: 500ms;
+}
+.batton_add_project_delete:hover>button {
+  width: 212px;
+  height: 52px;
+
+  
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  background: rgb(198, 3, 3);
+  border: none;
+  cursor: pointer;
+
+  color: rgba(255, 255, 255, 0.73);
+  font-family: ALS Sirius;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+
+
+}
+.inter_role_edit>input{
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  height: 82px;
+  display: block;
+  padding-left: 20px;
+  background: rgba(40, 190, 70, 0.3);
+  font-family: ALS Sirius;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 20px;
+  border: none;
+
+  color: rgba(0, 0, 0, 0.5);
+font-family: ALS Sirius;
+font-size: 28px;
+font-weight: 700;
+line-height: 35px;
+letter-spacing: 0%;
+text-align: left;
+}

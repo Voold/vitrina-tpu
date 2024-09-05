@@ -1,0 +1,674 @@
+/** @format */
+
+.add_class {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 665px;
+  margin: 0 auto;
+  /* height: 120vh; */
+  height: 120vh;
+  /* right: 300px; */
+  margin-top: 20px;
+  border: 1px solid #000;
+}
+
+/* Для всех плейсхолдеров =) */
+.add_class::placeholder {
+  padding-left: 20px;
+  color: rgba(0, 0, 0, 0.56);
+  font-family: ALS Sirius;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* Добавить проект */
+.print_add {
+  /* width: 608px; */
+  width: 92%;
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(40, 190, 70);
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 53px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.print_add > p {
+  /* width: 385px; */
+  height: 34px;
+  color: rgb(40, 190, 70);
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* Название вашего проекта */
+.name_project {
+  margin-top: 48px;
+}
+
+.name_project > input {
+  border: none;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  height: 42px;
+  display: block;
+  padding-left: 20px;
+  background-color: rgba(29, 25, 25, 0.1);
+  font-family: ALS Sirius;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 8px;
+}
+.for_button{
+  height:90%;
+  display:flex;
+  padding:0;
+  padding-bottom:2px;
+  border-radius:8px;
+  border:none;
+  background:none;
+  cursor:pointer;
+  transition:0.5s;
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left:80px;
+}
+.for_button:hover{
+  background-color: rgba(0, 0, 0, 0.1);;
+  
+}
+.for_button>svg{
+  margin-top:auto;
+  margin-bottom:auto;
+  padding-right:10px;
+  
+}
+.for_button>p{
+  color: rgba(0, 0, 0, 0.7);
+font-family: ALS Sirius;
+font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+margin:0;
+padding-top:10px;
+padding-bottom:10px;
+}
+/* набор участников */
+.recruitment {
+  margin-top:20px;
+  border: none;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  height: 42px;
+  display: flex;
+  background-color: rgba(29, 25, 25, 0.1);
+  border-radius:8px;
+}
+.recruitment>p{
+  font-family: ALS Sirius;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 8px;
+  margin:0;
+  padding-left:20px;
+  padding-top:8.5px;
+  padding-bottom:8.5px;
+  padding-right:5px;
+  color: rgba(0, 0, 0, 0.56);
+}
+/* Источник проекта */
+.source_project {
+  margin-top: 20px;
+}
+
+.source_project > input {
+  border: none;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  height: 42px;
+  display: block;
+  padding-left: 20px;
+  background-color: rgba(29, 25, 25, 0.1);
+  font-family: ALS Sirius;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 8px;
+}
+
+/* Главные теги  */
+.tegs {
+  width: 92%;
+  margin-left:auto;
+  margin-right:auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.tegs > input {
+  border: none;
+  box-sizing: border-box;
+  
+  height: 42px;
+  display: block;
+  padding-left: 20px;
+  background-color: rgba(29, 25, 25, 0.1);
+  font-family: ALS Sirius;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 8px;
+}
+
+/* Краткое описание */
+.description_project {
+  margin-top: 20px;
+}
+
+.description_project > textarea {
+  padding-top: 10px;
+  resize: none;
+  outline: none;
+  border: none;
+
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+
+  box-sizing: border-box;
+  height: 96px;
+  display: block;
+  padding-left: 20px;
+  background-color: rgba(29, 25, 25, 0.1);
+  font-family: ALS Sirius;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 8px;
+}
+/* Тип проекта */
+.select_type_project{
+  width:92%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.select_type_project>p{
+  color: rgba(0, 0, 0, 0.56);
+  font-family: inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.select_type_project>button{
+  width: auto;
+  width-max:100px;
+  height: 44px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.1);
+  border:none;
+  margin-right:15px;
+  cursor:pointer;
+
+}
+.select_type_project>button>p{
+  color: rgba(2, 2, 2, 0.45);
+  font-family: inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  margin:0;
+}
+.for_p_opis{
+  width:92%;
+  
+  margin-left:auto;
+  margin-right:auto;
+  color: rgba(2, 2, 2, 0.58);
+font-family: inter;
+font-size: 20px;
+font-weight: 700;
+line-height: 25px;
+}
+/* for scroll */
+.scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 90%;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background-color: rgb(232, 232, 232);
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(56, 56, 56);
+  border-radius: 10px;
+}
+
+/* Выполнение проекта */
+.line_cicle {
+  margin-top: 40px;
+}
+
+/* Главные теги  */
+.add_role {
+  margin-top: 35px;
+  /* width: 665px; */
+  width: 100%;
+  height: 44px;
+  word-wrap: break-word;
+}
+
+/* Добавление роли */
+.role {
+  /* width: 608px; */
+  width: 48%;
+  height: 100%;
+  margin-left: 30px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.role > p {
+  color: rgba(0, 0, 0, 0.56);
+  font-family: ALS Sirius;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-left: 15px;
+}
+
+/* Определить цели проекта */
+.inline_for_items {
+  margin: auto;
+  width: 91%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.purpose {
+  display: inline-block;
+  
+}
+
+.purpose > textarea {
+  padding-top: 10px;
+  resize: none;
+  outline: none;
+  border: none;
+
+  width: 300px;
+  height: 267px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  box-sizing: border-box;
+
+  padding-left: 5px;
+  background-color: rgba(29, 25, 25, 0.1);
+  font-family: ALS Sirius;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 8px;
+}
+
+/* Кнопка добавления */
+
+.batton_add_project {
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.batton_add_project > button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 212px;
+  height: 52px;
+
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  background: rgb(34, 159, 59);
+  transition: 500ms;
+
+  color: rgb(255, 255, 255);
+  font-family: ALS Sirius;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  transition: 500ms;
+}
+
+.batton_add_project:hover > button {
+  width: 212px;
+  height: 52px;
+
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  background: rgb(32, 142, 54);
+  border: none;
+  cursor: pointer;
+
+  color: rgba(255, 255, 255, 0.73);
+  font-family: ALS Sirius;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+}
+/* popup */
+.popup_add_role {
+  backdrop-filter: blur(50px);
+  background: rgba(0, 0, 0, 0.12);
+  width: 100%;
+}
+
+.inter_role > input {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  height: 82px;
+  display: block;
+  padding-left: 20px;
+  background-color: rgba(29, 25, 25, 0.1);
+  font-family: ALS Sirius;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 20px;
+  border: none;
+
+  color: rgba(0, 0, 0, 0.5);
+  font-family: ALS Sirius;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.inter_opis > textarea {
+  padding-top: 10px;
+  resize: none;
+  outline: none;
+  border: none;
+
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  box-sizing: border-box;
+  height: 250px;
+  display: block;
+  padding-left: 20px;
+  background-color: rgba(29, 25, 25, 0.1);
+  font-family: ALS Sirius;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 20px;
+
+  color: rgba(0, 0, 0, 0.5);
+  font-family: ALS Sirius;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+/* Реконструировано под личные нужды*/
+.modal {
+  border-radius: 8px;
+}
+
+.modal > .header {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 55px;
+
+  color: rgb(40, 190, 70);
+  font-family: inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: 0%;
+}
+
+.modal > .content {
+  width: 80%;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 5px;
+}
+
+.modal > .content > p {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: inter;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+.popup1-content {
+  border-radius: 20px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 59.09%;
+  height: 100%;
+}
+.popup3-content {
+  border-radius: 20px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 35%;
+  height: 30%;
+}
+.popup4-content {
+  border-radius: 20px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 25%;
+  height: 40%;
+}
+.application {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  margin-top: 10%;
+}
+.additioncheck {
+  text-align: center;
+}
+.application_p {
+  color: rgb(40, 190, 70);
+  font-family: ALS TPU;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: 0%;
+  
+}
+
+.batton_on_addproj {
+  margin-right: 15px;
+  margin-left: 15px;
+
+  width: 212px;
+  height: 52px;
+  border-radius: 8px;
+  background: rgb(34, 159, 59);
+  border: none;
+
+  color: rgb(255, 255, 255);
+  font-family: inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0%;
+}
+.batton_on_addproj:hover {
+  margin-right: 15px;
+  margin-left: 15px;
+
+  width: 212px;
+  height: 52px;
+  border-radius: 8px;
+  background: rgb(32, 142, 54);
+  border: none;
+  cursor: pointer;
+
+  color: rgba(255, 255, 255, 0.73);
+  font-family: inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0%;
+}
+
+.something {
+  list-style-type: none;
+  
+  color: rgba(0, 0, 0, 0.4);
+  font-family: inter;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0%;
+  
+}
+.something>li{
+  display: inline-block;
+  width:280px;
+  text-align:left;
+  height:50px;
+  
+}
+
+.button_try{
+  background-image: url('./picture.svg');
+  background-color: #fff;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background-size: cover;
+  cursor:pointer;
+}
+.button_try:focus{
+background-color:red;
+}
+.popupContent{
+margin-top:30px;
+
+}
+.popupContent>p:nth-child(1){
+  color: rgb(40, 190, 70);
+  font-family: inter;
+font-size: 40px;
+font-weight: 700;
+line-height: 53px;
+letter-spacing: 0%;
+text-align: center;
+margin:0;
+
+}
+.popupContent>p:nth-child(2){
+  color: rgb(109, 109, 109);
+  font-family: inter;
+font-size: 40px;
+font-weight: 700;
+line-height: 33px;
+letter-spacing: 0%;
+text-align: center;
+margin:0;
+}
+
+
+.container_button{
+  display: flex;
+  justify-content: center;
+  margin-top:40px;
+}
+.container_button>button{
+  width: 212px;
+  height: 52px;
+  margin-left:20px;
+  margin-right:20px;
+  border:none;
+  cursor:pointer;
+  color: rgb(255, 255, 255);
+
+  font-family: inter;
+font-size: 16px;
+font-weight: 700;
+line-height: 21px;
+  
+}
+.container_button>button:nth-child(1){
+  border-radius: 8px;
+  background: rgb(34, 159, 59);
+}
+.container_button>button:nth-child(2){
+  border-radius: 8px;
+  background: rgb(198, 3, 3);
+}
+
+.gray > button{
+  background-color: #858585 !important;
+}
+
+.red_alert{
+  border: 3px solid #ff0000 !important; 
+  color: #ff0000 !important;
+}
+
+.red_alertWB{
+  color: #ff0000 !important;
+}

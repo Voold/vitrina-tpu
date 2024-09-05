@@ -1,0 +1,94 @@
+/* Реконструировано под личные нужды*/
+.modal {
+    border-radius: 8px;
+  }
+  
+  .modal > .header {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 55px;
+  
+    color: rgb(40, 190, 70);
+    font-family: inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0%;
+  }
+  
+  .modal > .content {
+    width: 90%;
+  
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 5px;
+  }
+  
+  .modal > .content > p {
+    color: rgba(0, 0, 0, 0.4);
+    font-family: inter;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  
+  .modal > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
+  
+  .popup1-content {
+    border-radius: 20px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    width: 59.09%;
+    height: 100%;
+  }
+  .popup3-content {
+    border-radius: 20px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    width: 35%;
+    height: 30%;
+  }
+  .popup4-content {
+    border-radius: 20px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    width: 30%;
+    height: 33%;
+  }
+ 
+  [role="tooltip"].popup-content {
+    width: 400px;
+    
+  }
+  
+  .popup-overlay {
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.12);
+  }
+  
+  [data-popup="tooltip"].popup-overlay {
+    background: transparent;
+  }

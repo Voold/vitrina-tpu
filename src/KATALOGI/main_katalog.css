@@ -1,0 +1,118 @@
+.link{
+    text-decoration: none;
+}
+
+.Search_Field{
+    width: 250%;
+}
+
+.style_main_div{
+    display: none;
+}
+
+.catalog_body{
+    width: 98%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+}
+
+.catalog_left_part{
+    width: 27%;
+}
+
+
+.catalog_right_part{
+
+    width: 70%;
+    max-width: 944px;
+    margin: 0 auto;
+}
+
+.Filtr_block{
+    /* position: sticky;
+    top: 10px; */
+    margin: 0 auto;
+}
+
+.catalog_search{
+    width: 30%;
+}
+
+.Filtr_Button{
+    display: none;
+}
+
+.catalog_projects_box{
+    height: auto;
+    margin-bottom: 10%;
+}
+
+.catalog_projects_box > div > svg {
+    width: 100%;
+    
+    max-width: 81px;
+    margin: 0 auto;
+}
+
+.sad_smile_wrapper{
+    margin-top: 18vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sad_smile_label{
+    display: inline;
+    font-family: ALS Sirius;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44.57px;
+    text-align: center;
+    color: rgb(127, 127, 127);
+    width: 90%;
+    max-width: 477px;
+    margin: 0 auto;   
+    margin-top: 5%;
+}
+
+
+/* @media (min-width: 768px) and (max-width: 1024px) {
+} */
+
+@media (max-width: 480px){
+
+    .Filtr_Button{
+        display: block;
+    }
+
+    .Filtr_block{
+        display: none;
+    }
+    .catalog_left_part{
+        display: none;
+    }
+    .catalog_right_part{
+        width: 99%;
+    }
+    .opis{
+        width: 100%;
+    }
+    .catalog_search{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .Search_Field{ 
+        width: 85%;
+    }
+    .Filtr_Button{
+        padding: 0;
+        margin: 0;
+        background-color: white;
+
+        width: 42px;
+        height: 42px;
+    }
+}

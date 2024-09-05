@@ -1,0 +1,43 @@
+.catalog_projects_box_footer{
+    /* border: 1px solid #000; */
+    width: 100%;
+}
+
+.points_but{
+    min-width: 50px;
+    font-size: 40px !important;
+    line-height: 34px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 0;
+    padding: 0;
+    }
+
+.catalog_page_counter{
+    align-items: center;
+    /* border: 1px solid #000; */
+    height: 60px;
+    margin: 0 auto;
+    width: max-content;
+    min-width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.button_footer{
+    cursor: pointer;
+    background-color: rgb(219, 219, 219);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    font-family: ALS Sirius;
+    font-weight: 400;
+    font-size: 20px;
+    border: 0;
+}
+
+.SELECTED_BUT_FOOTER{
+    background-color: rgb(40, 190, 70);
+}

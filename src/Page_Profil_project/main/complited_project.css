@@ -1,0 +1,157 @@
+/* Complited Project */
+
+.profil_myproject_comproject_info{
+    width: 100%;
+    /* height: 80px; */
+    color: rgba(0, 0, 0, 0.69);
+    
+    font-family: ALS Sirius;
+    font-size: min( 32px, calc(24px + 4 * ((100vw - 320px) / 1024)));
+    font-weight: 700;
+}
+
+.profil_myproject_comproject{
+
+    position: relative;
+    width: 45%;
+    max-width: 437px;
+    max-height: 331px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-top: 0;
+    padding-left: 2%;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.profil_myproject_comproject_ist{
+    margin-top: -5%;
+    width: 95%;
+
+    color: #000;
+    font-family: ALS Sirius;
+    font-size: 16px;
+    font-weight: 200;
+}
+.profil_myproject_comproject_hesh{
+    min-width: max-content;
+    width: 47%;
+    height: 34px;
+    border-radius: 7px;
+    background: rgba(0, 0, 0, 0.22);
+    display: inline-flex;
+    /* margin-left: 20px; */
+    margin-right: 5%;
+
+    color: #FFF;
+
+    font-family: ALS Sirius;
+    font-size: min( 24px, calc(12px + 9 * ((100vw - 320px) / 1024)));
+    font-weight: 700;
+    opacity: 0.7;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.profil_myproject_comproject_conthesh{
+    width: 99%;
+    display: inline-flex;
+    margin-top: -10px;
+
+}
+.profil_myproject_comproject_date{
+    width: 136px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0.50);
+    margin-bottom: -4%;
+    
+    text-align: start;
+    font-family: ALS Sirius;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.profil_myproject_comproject_cont{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 98%;
+
+
+}
+.profil_myproject_comproject_img{
+    display: flex;
+    width: 47px;
+    height: 46px;
+    padding: 0.5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    opacity: 0.4;
+    background: #000;
+}
+.profil_myproject_comproject_imgSize{
+    width: 100%;
+    height: 75%;
+}
+
+
+.profil_myproject_comproject_n{
+
+    color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    font-family: ALS Sirius;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.profil_myproject_upper{
+    margin-top: -15px;
+}
+
+.type_and_info{
+    display: flex;
+}
+
+@media (max-width: 480px) {
+    .profil_myproject_comproject_info{
+        font-size: 13px;
+    }
+    .profil_myproject_comproject_ist{
+        font-size:11px ;
+        height: auto;
+    }
+    .profil_myproject_comproject_date{
+        font-size: 12px;
+        margin-bottom: -12%;
+    }
+    .profil_myproject_comproject_cont1{
+        
+    }
+    .profil_myproject_comproject_n{
+        font-size: 10px;
+    }
+    .profil_myproject_comproject_hesh{
+        font-size: 10px;
+        height: 20px;
+        line-height: 20px;
+        border-radius: 4px;
+    }
+    .profil_myproject_comproject{
+        border-radius: 4px;
+        padding-top: 2%;
+    }
+    .profil_myproject_comproject_img{
+        width: 28px;
+        height: 28px;
+    }
+    .profil_myproject_comproject_imgSize{
+        width: 100%;
+        height: 75%;
+    }
+    .profil_myproject_curproject_righ_cont{
+        gap: 5px;
+    }
+}

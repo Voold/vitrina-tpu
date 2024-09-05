@@ -1,0 +1,213 @@
+/** @format */
+
+.chief_div {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+}
+.chief_div > p:nth-child(1) {
+  color: rgb(40, 190, 70);
+  font-family: inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 53px;
+  margin: 0;
+}
+.student_app_2 {
+  display: flex;
+  padding-top: 30px;
+}
+.student_app2_2 {
+  padding-left: 15px;
+}
+.student_app2_2 > p:nth-child(1) {
+  margin: 0;
+
+  color: rgba(0, 0, 0, 0.56);
+  font-family: inter;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 46px;
+}
+.student_app2_2 > p:nth-child(2) {
+  margin: 0;
+
+  color: rgba(0, 0, 0, 0.4);
+  font-family: inter;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 33px;
+}
+.student_app2_2 > p:nth-child(3) {
+  margin: 0;
+  color: rgb(40, 190, 70);
+  font-family: ALS Sirius;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0%;
+}
+
+.student_bottom_2 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.chat {
+  margin-left: 7px;
+}
+.post {
+  border-radius: 15px;
+  background: rgb(40, 190, 70);
+  width: 152px;
+  height: 29px;
+  display: grid;
+}
+.post > p {
+  margin: auto;
+  color: rgb(255, 255, 255);
+  font-family: ALS Sirius;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.post_bottom {
+  padding-top: 10px;
+}
+.post_bottom > button {
+  border-radius: 15px;
+  width: 152px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  display: flex;
+}
+.post_bottom > button > p {
+  color: rgb(102, 102, 102);
+  font-family: ALS Sirius;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 0;
+  padding-top: 7px;
+  padding-left: 7px;
+}
+.about_me {
+}
+.about_me > p {
+  color: rgb(99, 99, 99);
+  font-family: inter;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 34px;
+  margin:0;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.about_me_content {
+  width: calc(100% - 173px);
+  min-height: 170px;
+  border-radius: 8px;
+  background: rgba(29, 25, 25, 0.1);
+  height: auto;
+  
+}
+.about_me_content>p{
+  margin:0;
+  padding-top:10px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom:10px;
+  color: rgba(0, 0, 0, 0.56);
+font-family: ALS Sirius;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+
+}
+.experience> p {
+  color: rgb(99, 99, 99);
+  font-family: inter;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 34px;
+  margin:0;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.experience_content {
+  width: calc(100% - 173px);
+  min-height: 90px;
+  border-radius: 8px;
+  background: rgba(29, 25, 25, 0.1);
+  overflow: hidden;
+  height:auto;
+
+}
+.experience_content>p{
+  margin:0;
+  padding-top:10px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom:10px;
+  color: rgba(0, 0, 0, 0.56);
+font-family: ALS Sirius;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+}
+
+.skills_myprofil_2> p {
+  color: rgb(99, 99, 99);
+  font-family: inter;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 34px;
+  margin:0;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.skills_myprofil_2_content {
+  
+  display: inline-block;
+  height: 44px;
+  border-radius: 8px;
+  background: rgba(29, 25, 25, 0.1);
+  overflow: hidden;
+  margin-right:10px;
+
+}
+.skills_myprofil_2_content>p{
+  
+  margin:0;
+  padding-top:10px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom:10px;
+  color: rgba(0, 0, 0, 0.6);
+font-family: ALS Sirius;
+font-size: 22px;
+font-weight: 700;
+line-height: 27px;
+}
+.personal_statistics> p {
+  color: rgb(99, 99, 99);
+  font-family: inter;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 34px;
+  margin:0;
+  margin-top:15px;
+  margin-bottom:10px;
+}
+
+.users_projects> p {
+  color: rgb(99, 99, 99);
+  font-family: inter;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 34px;
+  margin:0;
+  margin-top:10px;
+  margin-bottom:10px;
+}

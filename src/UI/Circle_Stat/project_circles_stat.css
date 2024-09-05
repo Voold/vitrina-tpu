@@ -1,0 +1,140 @@
+.project_circles_stat{
+
+    
+
+    margin-top: 60px;
+
+    width: 100%;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* overflow: hidden; */
+}
+
+.white_circle_background .green_circle_background{
+    width: 100%;
+    text-align: center;
+    
+}
+
+.project_circles_stat_line{
+    height: 0px;
+    width: 96%;
+    border: 3px solid rgb(188, 226, 196) ;
+    position: absolute;
+    z-index: -1;
+    top: 27px;
+    right: 2%;
+    
+}
+
+.circle_tick{
+    width: 70%;
+}
+
+.project_circles_stat_circle-block{
+    
+    width: 60px;
+}
+
+.project_circles_stat_circle{
+    
+    /* height: 60px; */
+    
+    border-radius: 50%;
+}
+
+
+.project_circles_stat_onCircle{
+    position: absolute;
+    
+    margin: 19px;
+    
+}
+
+.project_circles_stat_onCircle-tick{
+    
+    position: absolute;
+    margin: 20px 0 0 23px;
+    
+}
+
+.project_circles_stat_numberOfCircle{
+    
+    font-weight: 700;
+    margin-left: 5px;
+    font-family: ALS Sirius;
+    font-size: 16px;
+}
+
+.project_circles_stat_labels{
+    text-align: center;
+    position: relative;
+}
+
+.project_circles_stat_labels_main_green, .project_circles_stat_labels_main_gray{
+    text-align: center;
+
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 16px;
+    /* height: 20px; */
+    width: 160px;
+    /* margin-left: 5%; */
+    margin-left: -52px;
+    color: rgba(40, 190, 70, 1)
+}
+
+.project_circles_stat_labels_date_green, .project_circles_stat_labels_date_gray{
+    display: block;
+    width: 100px;
+    height: 40px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    color: rgba(40, 190, 70, 1);
+    margin-left: 4px;
+    margin-top: 5px;
+    height: 18px;
+    width: 60px;
+}
+.mob_a{
+    display: none;
+}
+.desc_a{
+    display: block;
+}
+
+.project_circles_stat_labels_date_gray, .project_circles_stat_labels_main_gray{
+    color:rgb(127, 127, 127);
+}
+
+
+@media (max-width: 770px){
+    .mob_a{
+        display: block;
+        font-size: calc(10px + 8 * (100vw / 1240));
+    }
+    .desc_a{
+        display: none;
+    }
+}
+
+@media (max-width: 473px) {
+    .mob_a{
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 100;
+    line-height: 15.86px;
+    text-align: center;
+    }
+    .project_circles_stat_labels_main_green, .project_circles_stat_labels_main_gray{
+    
+        width: 100px;
+        margin-left: -21px;
+    }
+    
+}

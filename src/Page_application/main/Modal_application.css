@@ -1,0 +1,40 @@
+/** @format */
+
+.modal_app {
+  height: 113px;
+  width: 231px;
+  background-color: rgb(224, 224, 224);
+  border-radius: 8px;
+  position:relative;
+}
+
+.modal_content_app {
+  display: flex;
+  flex-direction: column;
+}
+.modal_content_app > button {
+  display: flex;
+
+  height: 37px;
+  position: relative;
+  background-color: rgb(224, 224, 224);
+  cursor: pointer;
+
+  border-radius: 8px;
+  border: none;
+  color: rgb(137, 137, 137);
+  font-family: inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+.modal_content_app > button > svg {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+}
+.modal_content_app > button > p {
+  margin: 0;
+  margin-left: 37px;
+}

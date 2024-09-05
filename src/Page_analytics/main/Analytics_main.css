@@ -1,0 +1,272 @@
+.Analytics_box{
+    width: calc(100vw - 56px);
+}
+
+.main_Analytics{
+    margin: 0 auto;
+    width:70%;
+    max-width: 1017px;
+    height: auto;
+    /* border: 3px dashed rgb(43, 255, 0); */
+}
+
+.main_title_analytics{
+    margin-top: 22px;
+    display:block;
+    height: 5%;
+    min-height: 38px;
+    color: #28BE46;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.sub_title_analytics{
+    margin-top: 22px;
+    display:block;
+    height: 5%;
+    min-height: 38px;
+    color: #000000;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+#analytic_projects{
+    display: flex;
+    justify-content: space-between;
+    height: 1vh;
+    max-height: 164px;
+    min-height: 122px;
+}
+
+#analytic_projects > #all_projects, #active_projects, #ended_projects, #arhived_projects {
+
+    text-align: center;
+    color: #000;
+    width: 14%;
+    padding: 2% 2%;
+    min-width: max-content;
+    border-radius: 16px;
+    font-family: ALS Sirius;
+    font-size: min( 24px, calc(16px + 8 * ((100vw - 320px) / 1024)));
+    font-weight: 700;
+    line-height: 29.71px;
+
+}
+
+#all_projects svg {
+    margin-top: 8%;
+    width: 100%;
+}
+
+#all_projects > div > c, #active_projects > c, #ended_projects > c, #arhived_projects > c{
+    font-family: ALS Sirius;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 55.71px;
+    text-align: center;
+}
+
+#all_projects > div > b, #active_projects > b, #ended_projects > b, #arhived_projects > b{
+    color: #ffffff;
+}
+
+
+
+
+#analytic_projects > #all_projects{
+    width: 30%;
+    padding-left: 2%;
+    padding-right: 4%;
+    color: #000000 !important;
+    background-color: #0000003b;
+    opacity: 56%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#analytic_projects > #active_projects {
+    background-color: #28BE46;
+    opacity: 50%;
+}
+
+#analytic_projects > #ended_projects {
+    background-color: #C60303;
+    opacity: 50%;
+}
+
+#analytic_projects > #arhived_projects {
+    background-color: #7C7C7C;
+    opacity: 50%;
+}
+
+#analytic_search{
+
+    width: 100%;
+    margin-top: 40px;
+}
+
+#analytic_search p{
+    margin: 0;
+    margin-bottom: 1.5%;
+    font-family: ALS Sirius;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.71px;
+
+}
+
+.opacity1{
+    opacity: 1 !important;
+    color: white !important;
+}
+
+.active_users{
+    background-color: #e0e0e0;
+    border-radius: 16px;
+    padding: 2%;
+}
+
+.users_count{
+    display: flex;
+}
+
+.users_count svg{
+    margin-top: -1%;
+    width: 10%;
+}
+
+.users_count > div > p{
+    display: block;
+    margin: 0;
+    height: 46%;
+
+}
+
+.users_count p:first-child{
+    font-family: ALS Sirius;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.71px;
+    color: #3A7045;
+
+
+}
+
+.users_count p:last-child{
+    font-family: ALS Sirius;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.71px;
+    color: #28973E;
+
+}
+
+.lect_and_stud{
+    display: flex;
+    justify-content: space-around;
+}
+
+.lect_and_stud p{
+    font-family: ALS Sirius;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.71px;
+    text-align: left;
+
+}
+
+.lect_and_stud > div {
+    width: 48%;
+}
+.user_box{
+    background-color: #00000015;
+    border-radius: 16px  0 0 16px;
+    padding: 2% 4%;
+}
+
+.user_box ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.user_box li{
+    margin-top: 4%;
+}
+
+.user_box button{
+    font-family: ALS Sirius;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #00000027;
+    color: #000000af;
+    border-radius: 16px;
+    border: 0;
+    padding: 1.5% 5%;
+    margin: 4% 0 2% 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.user_box button:hover{
+    transition: 0.2s;
+    background-color: #0000003b;
+    color: #000000cc;
+
+}
+
+@media (max-width: 754px) {
+
+    #analytic_projects > #all_projects, #active_projects, #ended_projects, #arhived_projects {
+        width: 22%;
+        font-size: min( 24px, calc(12px + 16 * ((100vw - 320px) / 1024)));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 3% 2%;
+        justify-content: start;
+        height: max-content;
+    }
+    #all_projects > div > c, #active_projects > c, #ended_projects > c, #arhived_projects > c{
+        font-size: 45px;
+        font-size: min( 34px, calc(26px + 8 * ((100vw - 320px) / 1024)));
+
+    }
+    
+    #all_projects svg {
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .main_Analytics{
+        width:80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 380px) {
+    .main_Analytics{
+        width:80%;
+    }
+
+    body {
+        width: 380px;
+        overflow-x: scroll;
+    }
+
+    .Analytics_box{
+        width: 380px;
+    }
+
+}

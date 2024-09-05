@@ -1,0 +1,406 @@
+/** @format */
+
+.main_application {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+}
+
+.text_application1 {
+  margin-top: 20px;
+  color: rgb(137, 137, 137);
+  font-family: ALS Sirius;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.header_application {
+  margin-top: 25px;
+}
+.header_application_1 {
+  display: flex;
+  height: 65px;
+}
+.header_application_1 > p {
+  color: rgb(40, 190, 70);
+  font-family: inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 0px;
+}
+.header_application_2 {
+  display: flex;
+  height: 70px;
+}
+.header_application_2 > svg {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.reject_everything {
+  margin-left: auto;
+}
+
+.reject_everything > button {
+  width: 231px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  background: rgb(209, 53, 53);
+  margin-right: auto;
+  margin-top: 25px;
+
+  color: rgb(255, 255, 255);
+  font-family: inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0%;
+}
+.sort_application {
+  margin-left: auto;
+}
+.sort_application > button {
+  cursor: pointer;
+  width: 231px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  background: rgb(224, 224, 224);
+  margin-right: auto;
+  margin-top: 25px;
+
+  color: rgb(137, 137, 137);
+  font-family: inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0%;
+}
+.sort_application > button > svg {
+  position: relative;
+  right: -14px;
+}
+/* Реконструировано под личные нужды*/
+.popup5-content {
+  border-radius: 20px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 20%;
+  height: 10%;
+}
+
+/*  */
+.application_new {
+  weight: 100%;
+  
+  height: 168px;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.12);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.appp {
+  position: relative;
+  top: 20px;
+  left: 30px;
+  height: 80px;
+}
+.appp > p:nth-child(1) {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+}
+.appp > p:nth-child(2) {
+  color: rgb(124, 124, 124);
+  font-family: ALS Sirius;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0;
+}
+.appp2 {
+  position: relative;
+  display: flex;
+  left: 30px;
+  top: 20px;
+}
+.appp2 > p {
+  color: rgb(124, 124, 124);
+  font-family: ALS Sirius;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.appp3 {
+  position: relative;
+  right: 65px;
+  margin-left: auto;
+  padding-top: 25px;
+}
+.appp3 > p {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: ALS Sirius;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0;
+  margin-left: 35px;
+}
+.button_on_look {
+  margin-left: 28px;
+}
+.button_on_look > button {
+  background: none;
+  cursor: pointer;
+  border: none;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.on_look {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 172px;
+  height: 29px;
+  border-radius: 15px;
+  display: grid;
+  margin-top: 5px;
+}
+.on_look > p {
+  margin: auto;
+  color: #fff;
+  font-family: ALS Sirius;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 0px;
+}
+.accepted {
+  background: rgb(40, 190, 70);
+  width: 172px;
+  height: 29px;
+  border-radius: 8px;
+  display: grid;
+  margin-top: 5px;
+}
+.accepted > p {
+  margin: auto;
+  color: #fff;
+  font-family: ALS Sirius;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 0px;
+}
+.stick {
+  margin-right: auto;
+  margin-left: auto;
+  width: 92%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.modal_application_ {
+  height:100%;
+  
+}
+
+.app_on_look {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+.app_on_look > div {
+  margin-left: 10px;
+}
+.app_on_look > p {
+  color: rgb(109, 109, 109);
+  font-family: inter;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+}
+.app_on_look2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+.app_on_look2 > div {
+  margin-left: 10px;
+}
+.app_on_look2 > p {
+  
+  color: rgb(40, 190, 70);
+  font-family: inter;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+}
+.student_app {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.student_app2 {
+  padding-left: 15px;
+}
+.student_app2 > p:nth-child(1) {
+  margin: 0;
+  padding-top: 15px;
+  color: rgba(0, 0, 0, 0.56);
+  font-family: inter;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 46px;
+}
+.student_app2 > p:nth-child(2) {
+  margin: 0;
+
+  color: rgba(0, 0, 0, 0.4);
+  font-family: inter;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 33px;
+}
+.content_modal {
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.to_the_project {
+}
+.to_the_project > p {
+  color: rgb(109, 109, 109);
+  font-family: inter;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.opis_2{
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  cursor: pointer;
+}
+.role_and_opis > p {
+  color: rgb(109, 109, 109);
+  font-family: inter;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  margin:0;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.input_modal {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  width: 100%;
+  box-sizing: border-box;
+  height: 62px;
+  padding-left: 20px;
+  padding-top: 12px;
+  background-color: rgba(29, 25, 25, 0.1);
+  font-weight: 400;
+  border-radius: 20px;
+  border: none;
+  
+  color: rgba(0, 0, 0, 0.5);
+  font-family: ALS Sirius;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0%;
+}
+.input_modal>p{
+  margin:0;
+}
+
+.textarea_modal {
+  padding-top: 10px;
+  border: none;
+
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  box-sizing: border-box;
+  height: 200px;
+  
+  padding-left: 20px;
+  background-color: rgba(29, 25, 25, 0.1);
+  border-radius: 20px;
+
+  color: rgba(0, 0, 0, 0.5);
+  font-family: ALS Sirius;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  
+}
+.textarea_modal>p{
+  margin:0;
+}
+.Button_modal{
+  display:flex;
+  justify-content:center;
+  padding-top:20px;
+}
+.Button_modal>button:nth-child(1){
+  border-radius: 8px;
+  width: 212px;
+  height: 52px;
+  border:none;
+  background: rgb(34, 159, 59);
+  margin-right:20px;
+  cursor:pointer;
+  
+  color: rgb(255, 255, 255);
+font-family: inter;
+font-size: 16px;
+font-weight: 700;
+line-height: 21px;
+}
+.Button_modal>button:nth-child(2){
+  border-radius: 8px;
+  width: 212px;
+  height: 52px;
+  border:none;
+  background: rgb(198, 3, 3);
+  cursor:pointer;
+
+  color: rgb(255, 255, 255);
+font-family: inter;
+font-size: 16px;
+font-weight: 700;
+line-height: 21px;
+}
+.accepted {
+  background: rgb(40, 190, 70);
+  width: 172px;
+  height: 29px;
+  border-radius: 15px;
+  display: grid;
+  margin-top: 5px;
+}
+.accepted > p {
+  margin: auto;
+  color: #fff;
+  font-family: ALS Sirius;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 0px;
+}

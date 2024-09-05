@@ -1,0 +1,196 @@
+.Mobile_NB{
+    transform: rotate(0deg) !important;
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.ppp{
+    display: none;
+}
+
+.NB_active{
+    display: none;
+}
+
+.NB_active > label{
+    display: none;
+}
+
+.Mobile_NB > label{
+    display: none;
+}
+
+.Mobile_NB li{
+    display: inline-block;
+}
+
+@media (max-width: 480px) {
+    .ppp{
+        display: block;
+    }
+    .NB_active{
+        display: flex;
+        position: sticky;
+        top: 20px;
+        height: max-content;
+    } 
+    .NB_back{
+        position: fixed;
+        z-index: -1;
+        margin-top: -500vh;
+        margin-left: -300vw;
+        background-color: #0000009a;
+        height: 1500vh;
+        width: 1300vw;
+    }
+
+    .NB_but:hover{    
+        background-color: #00000069;
+
+    }
+    .NB_but{   
+        transition: 500ms; 
+        position: sticky;
+        top: 20px;
+        margin-top: 5px;
+        margin-left: 6px;
+        user-select: none;
+        display: flex;
+        left: 4vw;
+        background-color: #00000034;
+        border: 3px solid #00000083;
+        height: 40px;
+        width: 40px;
+        border-radius: 20%;
+        transform: rotate(90deg);
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        
+        font-family: ALS Sirius;
+        font-size: 24px;
+        line-height: 26px;
+        font-weight: 700;
+    }
+    .active_button{
+        position: sticky;
+        margin: 0;
+        padding: 0;
+        top: 20px;
+        height: auto;
+        width: auto;
+    }
+    .active_button label{
+        display: none;
+    }
+    .NB_but label{
+        margin-bottom: 8%;
+    }
+    .navbar_el{
+        margin: 0;
+        padding: 0 0 0 11px;
+
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        border: 1px solid #00000041;
+        padding: 6px 0px 6px 11px;
+    }
+    .navbar_el{
+
+        display: flex;
+        align-items: center;
+        transition: 500ms;
+        padding: 0;
+
+    }
+    .navbar_label{
+        position: relative;
+        color: rgba(0, 0, 0, 0.637);
+        font-family: inter;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 58px;
+    
+        margin-left: 0;
+        width: 250px;
+        opacity: 0.8;
+        transition: 500ms;
+        margin-left: -55px;
+        opacity: 1.5;
+        transition: 500ms;
+        height: 58px;
+        
+    }
+    .navbar_el:hover{
+        height: 58px;
+        padding: 6px 0px 6px 11px;
+        transition: 500ms;
+        background-color: rgba(138, 138, 138, 0.637);
+    }
+    .navbar_el{
+        margin: 0;
+        left: 0;
+        top: 0;
+        position: relative;
+
+        transition: 100ms;
+    }
+    
+    .navbar_el:hover{
+
+        transition: 100ms;
+
+    }
+    
+    .navbar_label{
+        margin-top: 0;
+        margin-bottom: 0;
+        transition: 100ms;
+    }
+    .transform_NB{
+        
+        user-select: none;
+        background-color: #00000034;
+        border: 3px solid #00000083;
+        height: max-content;
+        height: auto;
+        width: max-content;
+        padding: 0;
+        margin-top: 20px;
+        margin-left: 20px;
+        border-radius: 20px;
+
+
+        transition: 500ms;
+
+
+        
+    }
+    .navbar_el{
+        display: flex;
+        
+        width: auto;
+        height: 48px;
+        margin-left: -16%;
+
+        transition: 500ms;
+        background-color: rgb(195,195,195);
+        padding: 0px 0px 0px 10px;
+    }
+    
+    .navbar_el:hover{
+        height: 58px;
+        padding: 6px 0px 6px 11px;
+        transition: 500ms;
+    }
+    
+
+
+}

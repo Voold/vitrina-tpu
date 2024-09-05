@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "ALS Sirius";
+    src: url("/src/Shrifts/ALS_Sirius_Regular_0.95.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/src/Shrifts/ALS_Sirius_Bold_0.95.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "ALSTPU";
+    src: url("/src/Shrifts/ALSTPU.otf") format("opentype");
+}
+
+
+#over_navbar{
+    position: relative;
+    z-index: 134;
+    width: 66px;
+    
+}
+
+/* .dark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+}
+
+#over_navbar:hover .dark{
+    z-index: 0;
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.5;
+} */
+
+.navbar_Background {
+    position: absolute;
+    display: flex;
+    width: 66px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: Rgb(217, 217, 217);
+    transition: 500ms;
+
+    overflow: hidden;
+
+    position: sticky;
+    top: 0;
+
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.first_part_navbar{  }
+
+.second_part_navbar{  }
+
+
+.navbar_Background:hover {
+    width: 263px;
+    transition: 500ms;
+}
+
+/* .back1221, .back1221:hover{
+    display: block;
+
+    width: 0;
+    height: 100vh;
+    transition: 300ms;
+}
+
+#over_navbar:hover .back1221 {
+    display: block;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 300ms;
+} */
+
+.navbar_Background:hover .navbar_el{
+    padding: 0px 0px 0px 11px;
+    transition: 500ms;
+}
+
+.navbar_el{
+    display: flex;
+    align-self: flex-start;
+    width: 252px;
+    height: 48px;
+    align-items: center;
+    transition: 500ms;
+    background-color: rgb(195,195,195);
+    padding: 0px 0px 0px 20px;
+}
+
+.navbar_el:hover{
+    height: 58px;
+    padding: 6px 0px 6px 11px;;
+    transition: 500ms;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.navbar_label{
+    position: absolute;
+    left: 65px;
+    color: rgba(0, 0, 0, 0.56);
+    font-family: inter;
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-left: 100px;
+    width: 180px;
+    opacity: 0.3;
+    transition: 500ms;
+}
+
+.navbar_Background:hover .navbar_label{
+    margin-left: -5px;
+    opacity: 1;
+    transition: 500ms;
+    left: 55;
+}
+
+
+.navbar_Exit{
+    transition: 500ms;
+}
+
+@media (max-width: 480px) {
+    .navbar_Background{
+        height: 120vh;
+    }
+}
+
+@media (max-width: 380px) {
+    .navbar_Background {
+        height: 400vh;
+        width: 56px;
+    }
+    .navbar_el{
+        padding-left: 14px;
+    }
+    
+}

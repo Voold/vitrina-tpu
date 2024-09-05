@@ -1,0 +1,63 @@
+.btn-modal_Filtr{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-image: url('./image/icon_for_mobile_adaptation_figma.svg');
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position:  center center;
+    background-color: rgb(217, 217, 217);
+    border-radius: 10px;
+    margin-left: -16%;
+    -webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.popUP_filter_body{
+    width: 100vw;
+    height: max-content;
+    top:0;
+    left:0;
+    position: absolute;
+    z-index: 120;
+}
+
+.popUP_filter_back{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: rgb(224, 224, 224);
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+}
+
+.popUP_filter{
+    position: absolute;
+    height: max-content;
+    width: 80vw;
+    opacity: 1;
+    background-color: rgb(230, 230, 230);
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 10%;
+    border-radius: 10px;
+}
+
+@media (max-width: 380px) {
+    .popUP_filter_body{
+        width: 380px;
+    }
+    .popUP_filter_back{
+        height: 100%;
+        width: 380px;
+    }
+    .popUP_filter{
+        width: 340px;
+    }
+}

@@ -1,0 +1,27 @@
+.user_card_main{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items:center ;
+}
+
+.User_icon{
+
+}
+
+.UserCard_name{
+    font-family: ALS Sirius;
+    font-size: 20px;
+    font-weight: 1000;
+    line-height: 26.44px;
+    margin-left: 1.5%;
+    opacity: 56%;
+}
+
+.User_last_online{
+    font-family: ALS Sirius;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.76px;
+    opacity: 56%;
+}

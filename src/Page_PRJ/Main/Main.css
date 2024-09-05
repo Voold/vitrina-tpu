@@ -1,0 +1,480 @@
+.Arrow_2{
+    height:7vw;
+    min-height: 40px;
+    max-height: 80px;
+    width: 100%;
+    min-width: 40px;
+    max-width: 80px;
+
+    margin: 0;
+
+}
+
+.ContentMaker_2{
+    padding-top: 48px;
+    /* max-width: 1440px; */
+    width: 85%;
+    max-width: 1024px;
+    
+    margin: 0 auto;
+    display: flex;
+    gap: 0;
+    justify-content: flex-start;
+
+
+}
+
+.box_for_first-top{
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    /* position: relative; */
+    width: 100%;
+}
+
+.box_for_main_right{
+    margin: 0;
+    /* min-width: 1195px; */
+
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+/* Strelka */
+.Arrow_2{
+    display: inline-flex;
+    cursor: pointer;
+}
+.Back_p{
+    margin-left: -10px;
+}
+/* Strelka */
+/* Top */
+.top_info_2{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 79px; */
+    width: 70%;
+    /* height: 100%; */
+
+}
+.nazv_text_2as{
+    color: #229F3B;
+    font-family: ALS Sirius;
+    font-size: min(62px, calc(26px + 18 * (100vw / 1350)));
+    font-weight: 700;
+    margin-top: 4px;
+
+}
+.ist1_2{
+    font-family: Inter;
+    font-size: min(24px, calc(18px + 6 * (100vw / 1350)));
+    font-weight: 100;
+    margin-top: 10px;
+    /* margin-top: -125px; */
+}
+.base_cont_hesh_2{
+    display: inline-flex;
+    justify-content: start;
+    width: 100%;
+
+    margin-top: 28px;
+    gap: 2%;
+    flex-wrap: no-wrap;
+    /* margin-top: -90px; */
+}
+.cont_hesh_2{
+    text-align: center;
+    position: relative;
+    /* width: 263px; */
+    width: 48%;
+    /* height: 52px; */
+    border-radius: 7px;
+    background: rgba(0,0,0,0.16);
+    color: #000;
+    /* margin-right: 10px; */
+}
+.cont_hesh_2>a{
+    position: relative;
+    /* width: 229px; */
+    /* height: 30px; */
+    color: #FFF;
+    opacity: 0.7;
+    font-family: ALS Sirius;
+    font-size: 36px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.cont_hesh_2{
+    width: max-content;
+    padding: 2% 1%;
+}
+.cont_hesh_2 > a{
+    font-size: min(32px, calc(18px + 6 * (100vw / 1350)));
+}
+/* Top */
+/* Rigth INFO */
+
+.infoproject_2{
+    width: 30%;
+    max-width: 300px;
+    display: inline-flex;
+    padding: 25px 122px 7px 25px;
+    align-items: center;
+    border-radius: 0px 146px 0px 0px;
+    background: rgba(29, 25, 25, 0.15);
+    /* right: -3%; */
+    /* position: absolute; */
+    margin-left: auto;
+    /* max-width: 290px; */
+    /* height: 167px; */
+}
+.nabor_2{
+    display: flex;
+    padding: 3px 11px 5px 0px;
+    align-items: center;
+    border-radius: 0px 15px 15px 0px;
+    background:#28BE46;
+    /* width: 132px; */
+    /* height: 26px; */
+    position: relative;
+    top: 15px;
+}
+.nabor_2>a{
+    text-decoration: none;
+    color: #FFF;
+    margin-left: 8px;
+    text-align: center;
+    font-family: ALS Sirius;
+    font-size: 16px;
+    font-weight: 700;
+}
+.info_2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    margin-left: 10px;
+
+}
+.PZ_2{
+    color: rgba(0, 0, 0, 0.50);
+    font-family: ALS Sirius;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.SP_2{
+    width: calc(100% + 110px);
+
+    margin-top: 25px;
+    color: rgba(0, 0, 0, 0.50);
+
+    font-family: ALS Sirius;
+    font-size: 16px;
+    font-weight: 700;
+}
+.TP_2{
+    margin-top: 25px;
+    padding-bottom: 15px;
+    color: rgba(0, 0, 0, 0.50);
+    width: calc(100% + 110px);
+
+
+    font-family: ALS Sirius;
+    font-size: 16px;
+    font-weight: 700;
+}
+/* Rigth INFO */
+/* Opis */
+.Opis_2{
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-top: 24px;
+    width: 100%;
+    /* background: #FFF; */
+}
+.text_opis_2{
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    /* border: 1px solid #000; */
+    /* width: 191px; */
+    color: #000;
+    
+    font-family: ALS Sirius;
+    font-size: 36px;
+    font-weight: 700;
+}
+/* .rol_p_2
+{
+    position: relative;
+    bottom: 25px;
+    left: 120px;
+} */
+.cont_opis_2{
+    padding-left: 2%;
+    padding-right: 1%;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.12);
+}
+.cont_opis_2>p{
+    color: #000;
+    font-family: ALS Sirius;
+    
+    font-weight: 400;
+
+    font-size: min(32px, calc(12px + 16 * (100vw / 1280)));
+}
+/* Opis */
+/* Cel i Zadachi */
+.Cont_CZ_2{
+    display: inline-flex;
+    margin-top: 70px;
+    width: 100%;
+    flex-direction: column;
+}
+.Zadacha_text_2{
+    color: #000;
+    font-family: ALS Sirius;
+    font-size: 36px;
+    font-weight: 700;
+    width: 100%;
+}
+.Cel_text_2{
+    text-align: left;
+    width: 100%;
+    color: #000;
+    position: relative;
+    font-family: ALS Sirius;
+    font-size: 36px;
+    font-weight: 700;
+}
+.Cel_2, .Zadacha_2{
+    /* height: 376px; */
+    padding: 2% 3% 2% 3%;
+    border-radius: 7px;
+    background: rgba(0, 0, 0, 0.16);
+    width: 100%;
+}
+.Zadacha_text_2{
+    text-align: left;
+    color: #000;
+
+    position: relative;
+    font-family: ALS Sirius;
+    font-size: 36px;
+    font-weight: 700;
+}
+.Your_approw1_2, .Your_approw2_2{
+    color: rgba(0, 0, 0, 0.40);
+    height: 80%;
+    width: 100%;
+    font-family: ALS Sirius;
+    font-size: min(36px, calc(18px + 14 * (100vw / 1350)));
+    font-weight: 700;
+    width:90%;
+    margin: 0 auto;
+
+}
+
+.Your_approw2_2 ul li, .Your_approw1_2 ul li{
+    width: 100%;
+}
+
+
+.Cont_CZ_name_labels{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Cont_CZ_name_blocks{
+    width: 100%;
+    /* min-width: max-content; */
+}
+
+/* Cel i Zadachi */
+/* Rezult */
+.cont_Rez_2{
+    position: relative;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.Rez_pois_2{
+    color: #000;
+
+    font-family: ALS Sirius;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.Fon_Rez_2{
+    width: 100%;
+    padding: 2% 4%;
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.12);
+
+}
+.text_Rez_2{
+    /* width: 1171px; */
+    color: #000;
+    
+    font-family: ALS Sirius;
+    font-size: min(36px, calc(18px + 14 * (100vw / 1350)));
+    font-weight: 400;
+    
+
+}
+/* Rezult */
+
+/* Role cont */
+.Role_text_2{
+    /* width: 105; */
+    margin-top: 9%;
+    color: #000;
+    
+    font-family: ALS Sirius;
+    font-size: 36px;
+    font-weight: 700;
+}
+.Cont_Role_2{
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.Sub_Cont_Role_2{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px 10px;
+
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+.Cont_role_osnova_2{
+    
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* align-items: flex-start;
+    align-content: flex-start; */
+    /* gap: 30px 75px; */
+    flex-wrap: wrap;
+    overflow:hidden;
+    justify-content: space-between;
+}
+
+.infoproject_2_mobile_a{
+    display: none;
+}
+
+@media (max-width: 770px) {
+    .ContentMaker_2{
+        padding-top: 36px;
+    }
+    .base_cont_hesh_2{
+        margin-top: 15px;
+        justify-content: start;
+        gap: 2%;
+        width: 100%;
+    }
+    .cont_hesh_2{
+        width: max-content;
+        padding: 2% 1%;
+    }
+    .cont_hesh_2 > a{
+        font-size: min(26px, calc(18px + 8 * (100vw / 1350)));
+    }
+    .box_for_first-top{
+        display: block;
+    }
+    .textproject_2{
+        height: auto;
+        position: none;
+    }
+    .textproject_2  >  .back_for_info{
+        position: absolute;
+        margin-right: 0;
+        width: 100vw;
+        height: auto;
+        /* margin-left: auto;
+        margin-right: auto; */
+        left: 0;
+        right: 0;
+        /* text-align: center; */
+        background-color: rgb(40, 190, 70);
+        border-top: 1px solid rgba(1,1,1,0.5);
+        border-bottom: 1px solid rgba(1,1,1,0.5);
+        z-index: -1;
+    }
+    .visnone{
+        visibility: hidden;
+    }
+    .tessst{
+        height: max-content;
+        border: 1px solid #000;
+        width: 100%;
+    }
+    .infoproject_2_mobile_a{
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        /* margin-left: -100%; */
+        padding: 0;
+        border-radius: 0;
+        /* background-color: rgb(40, 190, 70); */
+    }
+    .infoproject_2_mobile_a .PZ_2, .SP_2, .TP_2{
+        color: #FFF;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .infoproject_2{
+        display: none;
+    }
+    .top_info_2{
+        width: 100%;
+    }
+    .box_for_main_right{
+
+        width: 85%;
+    }
+    .ContentMaker_2{
+        width: 90%;
+    }
+    .Role_text_2{
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 380px) {
+    .ContentMaker_2{
+        padding-top: 24px;
+    }
+    .textproject_2  >  .back_for_info{
+        width: 380px;
+    }
+}
+
