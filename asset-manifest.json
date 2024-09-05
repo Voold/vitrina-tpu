@@ -1,16 +1,31 @@
 {
   "files": {
-    "main.css": "/vitrina-tpu/static/css/main.f855e6bc.css",
-    "main.js": "/vitrina-tpu/static/js/main.c0d3b03a.js",
-    "static/js/453.16d0bcf9.chunk.js": "/vitrina-tpu/static/js/453.16d0bcf9.chunk.js",
-    "static/media/logo.svg": "/vitrina-tpu/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/vitrina-tpu/static/css/main.876ffebc.css",
+    "main.js": "/vitrina-tpu/static/js/main.a209fe0d.js",
+    "static/media/ALS_Sirius_Bold_0.95.otf": "/vitrina-tpu/static/media/ALS_Sirius_Bold_0.95.638d7e3f3eca33ff3fb1.otf",
+    "static/media/ALS_Sirius_Regular_0.95.otf": "/vitrina-tpu/static/media/ALS_Sirius_Regular_0.95.c41245c8e1e7683436fa.otf",
+    "static/media/le_zalupa.svg": "/vitrina-tpu/static/media/le_zalupa.f5af8fe03ba3eb8f182c5ca8625f57f9.svg",
+    "static/media/ALSTPU.otf": "/vitrina-tpu/static/media/ALSTPU.e3df9a961b111b1a23e0.otf",
+    "static/media/load.gif": "/vitrina-tpu/static/media/load.742ff89c4ca23122d0ab.gif",
+    "static/media/ЛоготипВитринаПроектов.svg": "/vitrina-tpu/static/media/ЛоготипВитринаПроектов.d3b65a07b56f359f9a18f24a8e5c9c70.svg",
+    "static/media/mounth.svg": "/vitrina-tpu/static/media/mounth.fa0234d68f3d27b304011f3105d19164.svg",
+    "static/media/ЛогоТПУ.svg": "/vitrina-tpu/static/media/ЛогоТПУ.e0dcdf48e1671181938f8c1fe719e4e7.svg",
+    "static/media/school.svg": "/vitrina-tpu/static/media/school.7e9bdd6d713267419492ffddf3cf98ea.svg",
+    "static/media/type_project.svg": "/vitrina-tpu/static/media/type_project.23300aef068c87164febcc661e9bc99c.svg",
+    "static/media/icon_for_mobile_adaptation_figma.svg": "/vitrina-tpu/static/media/icon_for_mobile_adaptation_figma.b2e1337a52d38848c8aa.svg",
+    "static/media/icon_man.svg": "/vitrina-tpu/static/media/icon_man.596749837fcd011f03a11b280fb5ae0a.svg",
+    "static/media/oke.svg": "/vitrina-tpu/static/media/oke.53835a9c3757e95a0fe6f56bdbb67d0e.svg",
+    "static/media/for_chat.svg": "/vitrina-tpu/static/media/for_chat.d1d929415cbcde158607d9643789acb7.svg",
+    "static/media/calendar.svg": "/vitrina-tpu/static/media/calendar.3d2526645f794cfc2ee6e7da0df9ee84.svg",
     "index.html": "/vitrina-tpu/index.html",
-    "main.f855e6bc.css.map": "/vitrina-tpu/static/css/main.f855e6bc.css.map",
-    "main.c0d3b03a.js.map": "/vitrina-tpu/static/js/main.c0d3b03a.js.map",
-    "453.16d0bcf9.chunk.js.map": "/vitrina-tpu/static/js/453.16d0bcf9.chunk.js.map"
+    "static/media/not_oke.svg": "/vitrina-tpu/static/media/not_oke.72c9706b8a3f19772d309aad812e3f6e.svg",
+    "static/media/picture.svg": "/vitrina-tpu/static/media/picture.acb5d65ba311e8a0eded.svg",
+    "static/media/big_stick.svg": "/vitrina-tpu/static/media/big_stick.a8273fc915576670eb6a7b76bfcbeb18.svg",
+    "main.876ffebc.css.map": "/vitrina-tpu/static/css/main.876ffebc.css.map",
+    "main.a209fe0d.js.map": "/vitrina-tpu/static/js/main.a209fe0d.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.c0d3b03a.js"
+    "static/css/main.876ffebc.css",
+    "static/js/main.a209fe0d.js"
   ]
 }
