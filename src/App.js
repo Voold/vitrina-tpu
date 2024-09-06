@@ -50,7 +50,7 @@ function App() {
   return (
     <>
         <Routes>
-          <Route path="/" element={data}/>
+          <Route exact path="/" element={data}/>
           <Route path='/MyProfil' element={<MyProfile autorization = { autorization } />}/>
           <Route path='/MyProject' element={<MyProject autorization = { autorization } />}/>
           <Route path='/Add' element={<Add_project autorization = { autorization } />}/>
