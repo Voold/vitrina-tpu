@@ -16,7 +16,7 @@ const MyProject = (props) => {
     
       <div class="body_cont_forUIpage">
         <Navbar user_status = {props.autorization.userStatus}/>
-        <MyProjectBody/>
+        <MyProjectBody apiAdress = {props.apiAdress}/>
       </div>
 
     </div>

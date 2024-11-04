@@ -20,7 +20,7 @@ export default function Page1(props) {
   };
 
   useEffect(() => {
-    fetch('http://176.109.107.163:8000/users/2/', options)
+    fetch( props.apiAdress + '/users/2/', options)
       .then(response => response.json())
       .then(data => console.log(data))
       .catch(error => console.error(error));

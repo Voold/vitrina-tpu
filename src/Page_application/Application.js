@@ -12,7 +12,7 @@ export default function Applications(props) {
             </div>
             <div class="body_cont_forUIpage">
                 <Navbar user_status={props.autorization.userStatus} />
-                <Application/>
+                <Application apiAdress = {props.apiAdress}/>
             </div>  
         </div>
     )

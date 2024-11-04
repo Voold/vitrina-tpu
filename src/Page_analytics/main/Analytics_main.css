@@ -17,7 +17,7 @@
     min-height: 38px;
     color: #28BE46;
     font-family: Inter;
-    font-size: 40px;
+    font-size: min( 40px, calc(25px + 8 * ((100vw - 320px) / 1024)));
     font-weight: 700;
 }
 
@@ -28,7 +28,7 @@
     min-height: 38px;
     color: #000000;
     font-family: Inter;
-    font-size: 30px;
+    font-size: min( 30px, calc(18px + 8 * ((100vw - 320px) / 1024)));
     font-weight: 700;
 }
 
@@ -65,7 +65,7 @@
     font-family: ALS Sirius;
     font-size: 45px;
     font-weight: 700;
-    line-height: 55.71px;
+    line-height: 50px;
     text-align: center;
 }
 
@@ -105,14 +105,14 @@
 #analytic_search{
 
     width: 100%;
-    margin-top: 40px;
+    margin-top: 3%;
 }
 
 #analytic_search p{
     margin: 0;
-    margin-bottom: 1.5%;
+    margin-bottom: 1%;
     font-family: ALS Sirius;
-    font-size: 24px;
+    font-size: min( 24px, calc(16px + 8 * ((100vw - 320px) / 1024)));
     font-weight: 700;
     line-height: 29.71px;
 
@@ -133,23 +133,30 @@
     display: flex;
 }
 
+.users_count div {
+    width: 100%;
+}
+
 .users_count svg{
     margin-top: -1%;
-    width: 10%;
+    width: 15%;
+    min-width: 50px;
 }
 
 .users_count > div > p{
     display: block;
     margin: 0;
+    /*margin-left: 4%;*/
+    margin-bottom: 1%;
     height: 46%;
+    font-size: min( 24px, calc(12px + 8 * ((100vw - 320px) / 1024)));
 
 }
 
 .users_count p:first-child{
     font-family: ALS Sirius;
-    font-size: 24px;
     font-weight: 700;
-    line-height: 29.71px;
+    line-height: 20px;
     color: #3A7045;
 
 
@@ -157,9 +164,8 @@
 
 .users_count p:last-child{
     font-family: ALS Sirius;
-    font-size: 24px;
     font-weight: 700;
-    line-height: 29.71px;
+    line-height: 20px;
     color: #28973E;
 
 }
@@ -171,7 +177,7 @@
 
 .lect_and_stud p{
     font-family: ALS Sirius;
-    font-size: 24px;
+    font-size: min( 24px, calc(14px + 8 * ((100vw - 320px) / 1024)));
     font-weight: 700;
     line-height: 29.71px;
     text-align: left;
@@ -211,7 +217,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-
+    font-size: min( 20px, calc(8px + 12 * ((100vw - 320px) / 1024)));
 }
 
 
@@ -223,6 +229,12 @@
 }
 
 @media (max-width: 754px) {
+
+    #all_projects > div > c, #active_projects > c, #ended_projects > c, #arhived_projects > c{
+
+        line-height: 38px;
+
+    }
 
     #analytic_projects > #all_projects, #active_projects, #ended_projects, #arhived_projects {
         width: 22%;

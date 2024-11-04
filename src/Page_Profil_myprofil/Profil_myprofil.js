@@ -12,22 +12,7 @@ const MyProfile = (props) => {
 
   const setProfileDataHandler = (props) => {
     console.log(props);
-    // setAutz(props.autz);
   }
-
-/*   const [dark, setDark] = useState("");
-
-  const darkON = () => {
-    setDark("dark");
-    console.log("1");
-  }
-
-  const darkOFF = () => {
-    setDark("");
-    console.log("0");
-  } */
-
-  /* onPoinerEnter={darkON} onMouseOut={darkOFF} */
 
   return (
     <div class = "main_flexBox">
@@ -39,7 +24,7 @@ const MyProfile = (props) => {
     
       <div class="body_cont_forUIpage">
         <Navbar user_status = {props.autorization.userStatus}/>
-        <Main onUserInputProfile = {setProfileDataHandler}/>
+        <Main onUserInputProfile = {setProfileDataHandler} apiAdress = {props.apiAdress}/>
       </div>
 
     </div>

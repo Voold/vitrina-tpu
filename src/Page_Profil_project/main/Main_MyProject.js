@@ -3,7 +3,7 @@ import './main.css'
 import CurrentProject from './Current_project'
 import Comproject from './comlited_project'
 
-const MyProjectBody = () => {
+const MyProjectBody = (props) => {
     return (
         <div class='page_myproject_class'>
                 

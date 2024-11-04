@@ -11,7 +11,7 @@ export default function Myprofil2(props){
         </div>
         <div class="body_cont_forUIpage">
             <Navbar user_status={props.autorization.userStatus} />
-            <Profil_2/>
+            <Profil_2 apiAdress = {props.apiAdress}/>
         </div>  
     </div>)
 }

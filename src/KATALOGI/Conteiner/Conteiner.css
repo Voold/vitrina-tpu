@@ -12,6 +12,22 @@
     src: url("/src/Shrifts/ALSTPU.otf") format("opentype");
 }
 
+
+
+/* .cont-project{
+    transition: all 0.5s ease;
+    animation: ship 1s linear infinite;
+}
+
+@keyframes ship {
+    from {
+        transform: rotate(360deg);
+    }
+} */
+
+
+
+
 /* Карточка проекта ПОДЧЕРК */
 .cont-project:hover{
     border-radius: 15px;

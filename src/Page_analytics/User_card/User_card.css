@@ -1,27 +1,84 @@
 .user_card_main{
     display: flex;
     width: 100%;
-    justify-content: space-around;
+
+    justify-content: space-between;
     align-items:center ;
 }
 
-.User_icon{
+.sub_cont_uname_uicon{
+    position: relative;
+    display: flex;
+    align-items:center;
+    width: 75%;
+    height: 100%;
+}
 
+.User_icon{
+    position: relative;
+}
+
+.User_icon svg{
+    width: 5vw;
+    min-width: 35px;
+    min-height: 35px;
+    max-width: 66px;
+    max-height: 66px;
+}
+
+.online_status{
+    position: absolute;
+    right: 1px;
+    top: 2px;
+    height: 23%;
+    width: 23%;
+    border-radius: 50%;
+    background-color: #1db100;
 }
 
 .UserCard_name{
     font-family: ALS Sirius;
-    font-size: 20px;
-    font-weight: 1000;
-    line-height: 26.44px;
-    margin-left: 1.5%;
+    font-size: min( 20px, calc(8px + 8 * ((100vw - 320px) / 1024)));
+    font-weight: 800;
+    line-height: 20px;
+    margin-top: -3%;
+    margin-left: 3%;
     opacity: 56%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .User_last_online{
     font-family: ALS Sirius;
-    font-size: 20px;
+    text-align: center;
+    width: 24%;
+    font-size: min( 20px, calc(8px + 8 * ((100vw - 320px) / 1024)));
     font-weight: 400;
-    line-height: 24.76px;
+    line-height: 20px;
+    margin-top: -3%;
     opacity: 56%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 754px) {
+    .UserCard_name{
+        line-height: 15px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .UserCard_name{
+        line-height: 12px;
+        font-size: 8px;
+    }
+    .User_last_online{
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 380px) {
+
+
 }

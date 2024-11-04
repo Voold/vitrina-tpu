@@ -2,16 +2,12 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import "./NewNavbar.css";
-import Mobile_NB from "./Mobile_NB";
+import "./Navbar.css";
 
 export default function Page(props) {
 
   return (
     <div id="over_navbar">
-
-
-      <Mobile_NB user_status = {props.user_status}/>
 
 
       <a class="link" href="#top">

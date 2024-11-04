@@ -108,6 +108,7 @@ Conteiner.defaultProps = {
     "date_end": "2005-04-17",
     "duration": 0,
     "course": ["1","2"],
+    "get_member_end" : "2005-04-17",
   },
 
   /*

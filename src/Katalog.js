@@ -63,7 +63,7 @@ function Try( props ) {
   // Функция, которая переносит на страницу проекта
   const GoToProjectHandler = (event) => {
     const current_id = event.card_data.id;
-    const current_api_adress = 'http://176.109.107.163:8000/catalog/project/' + current_id + '/';
+    const current_api_adress = props.apiAdress + '/catalog/project/' + current_id + '/';
     //Тут через апишку и айдишник подтягиваем основную дату
 
 

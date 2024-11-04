@@ -12,7 +12,7 @@ export default function add(props) {
             </div>
             <div class="body_cont_forUIpage">
                 <Navbar user_status = {props.autorization.userStatus}/> 
-                <ADD school = {props.autorization.userSchool}/>
+                <ADD school = {props.autorization.userSchool} apiAdress = {props.apiAdress}/>
             </div>
         </div>
     )

@@ -6,6 +6,7 @@ import CatalogProjectFooter from '../../KATALOGI/CatalogProjectFooter';
 import Page_Project from '../../Page_project';
 import Search from '../../UI/Search/Search';
 import User_card from '../User_card/User_card';
+import { Link, Navigate } from 'react-router-dom';
 
 export default function Analytics_main(props){
 
@@ -17,27 +18,27 @@ export default function Analytics_main(props){
   const [projectsEnded, setProjectsEnded] = useState([]);
   
   useEffect(() => {
-    fetch('http://176.109.107.163:8000/catalog/')
+    fetch(props.apiAdress + '/catalog/')
     .then(response => response.json())
     .then(data => setProjects(data))
     .catch(error => console.error(error), setProjects([]));
   }, []);
 
   useEffect(() => {
-    fetch('http://176.109.107.163:8000/catalog/pending')
+    fetch( props.apiAdress + '/catalog/pending')
     .then(response => response.json())
     .then(data => setProjectsPending(data))
     .catch(error => console.error(error), setProjectsPending([]));
   }, []);
   
   useEffect(() => {
-    fetch('http://176.109.107.163:8000/catalog/completed')
+    fetch( props.apiAdress + '/catalog/completed')
     .then(response => response.json())
     .then(data => setProjectsEnded(data))
     .catch(error => console.error(error), setProjectsEnded([]));
   }, []);
 
-  // Это количество проекутов на оной странице
+  // Это количество проектов на оной странице
   const countOfProjectsOnePage = 3;
   const current_countOfPrijects = projects.length;
   
@@ -104,7 +105,7 @@ export default function Analytics_main(props){
      // Функция, которая переносит на страницу проекта
     const GoToProjectHandler = (event) => {
     const current_id = event.card_data.id;
-    const current_api_adress = 'http://176.109.107.163:8000/catalog/project/' + current_id + '/';
+    const current_api_adress = props.apiAdress + '/catalog/project/' + current_id + '/';
     //Тут через апишку и айдишник подтягиваем основную дату
 
 
@@ -329,8 +330,8 @@ export default function Analytics_main(props){
                         <path d="M36.9997 43.167C50.026 43.167 52.0457 54.1736 52.3589 57.5868C52.4093 58.1367 51.9686 58.5837 51.4163 58.5837H22.583C22.0307 58.5837 21.59 58.1367 21.6405 57.5868C21.9536 54.1736 23.9733 43.167 36.9997 43.167Z" stroke="#33363F" stroke-width="5" stroke-linecap="round"/>
                       </svg>
                       <div>
-                        <p>Общее количество пользователей: {}</p>
-                        <p>Активные пользователи: {}</p>
+                        <p>Общее количество пользователей: {"***"}</p>
+                        <p>Активные пользователи: {"***"}</p>
                       </div>
                     </div>
                     <div id = "analytic_search"> 
@@ -342,12 +343,12 @@ export default function Analytics_main(props){
                         <div class = "user_box">
                             <ul>
 
-                              <li><User_card/></li>
-                              <li><User_card/></li>
-                              <li><User_card/></li>
+                              <li><User_card userName={"Шахзод Фахриддинович"} isOnline={true} lastOnline = {"-"}/></li>
+                              <li><User_card userName={"Шахзод Дусматов"} isOnline={true} lastOnline = {"-"}/></li>
+                              <li><User_card userName={"Никита Кикита"} isOnline={false} lastOnline = {"21.02.12"}/></li>
 
                             </ul>
-                            <button type='button'>полностью</button>
+                            <Link to="/Users_lectures"><button type='button'>полностью</button></Link>
                         </div>
                       </div>
                       <div>
@@ -355,13 +356,13 @@ export default function Analytics_main(props){
                         <div class = "user_box">
                             <ul>
 
-                              <li><User_card/></li>
-                              <li><User_card/></li>
-                              <li><User_card/></li>
+                            <li><User_card userName={"Василиса Алексеева"} isOnline={true} lastOnline = {"-"}/></li>
+                            <li><User_card userName={"Кирилл Накурилл"} isOnline={false} lastOnline = {"1m"}/></li>
+                            <li><User_card userName={"Махрипа Хрипылаевна"} isOnline={false} lastOnline = {"1h"}/></li>
 
                             </ul>
-                            <button type='button'>полностью</button>
-                        </div>  
+                            <Link to="/Users_students"><button type='button'>полностью</button></Link>
+                        </div>
                       </div>                                            
                     </div>
                   </div>

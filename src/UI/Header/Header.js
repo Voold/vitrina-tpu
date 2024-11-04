@@ -22,7 +22,8 @@ const Header = (props) => {
           <img src={mobile_Vitrina} alt="Vitrina"></img>
           </div>
 
-            <Link to={props.path}>
+             <Link to={props.path} state={{ from: "occupation" }}> 
+            
               <div class='Myprofil_header_name'>
 
                 <div class='Myprofil_name Myprofil_name_main'>

@@ -7,11 +7,17 @@ import MyProfile_2 from './Page_Profil_2/my_profil_2.js';
 import MyProfile from './Page_Profil_myprofil/Profil_myprofil.js'
 import MyProject from './Page_Profil_project/Profil_myproject.js';
 import React, { useEffect, useState} from 'react';
-import {Route,Routes } from 'react-router-dom';
+import {Route,Routes,redirect } from 'react-router-dom';
 import Loading from './UI/Loading/Loading.js';
 import Analytics from './Page_analytics/Analytics.js';
 import Error from './Error/Error.js';
+import Users_page from './Users_page/Users_page.js';
+
 function App() {
+
+  // адрес бэка
+  const apiAdress = "http://213.171.30.90:8000/";
+  
 
   // =================================================================================================
   // Тут через апишку надо будет авторизацию узнать
@@ -40,24 +46,35 @@ function App() {
   const [data, setData] = useState(<Loading></Loading>);
 
   useEffect(() => {
-    fetch('http://176.109.107.163:8000/catalog/pending')
+    fetch(apiAdress + '/catalog/pending')
       .then(response => response.json())
-      .then(data => setData(<Katalog projects={data} autorization = { autorization }/>))
-      .catch(error => console.error(error), setData(<Katalog projects={[]} autorization = { autorization }/>));
+      .then(data => setData(<Katalog projects={data} autorization = { autorization } apiAdress = {apiAdress} />))
+       .catch(error => console.error(error), setData(<Katalog projects={[]} autorization = { autorization } />));
+      /* .catch(error => console.error(error), () => {return (redirect("/Error"))}); */
   }, []);
 
 
   return (
     <>
         <Routes>
-          <Route exact path="/" element={data}/>
-          <Route path='/MyProfil' element={<MyProfile autorization = { autorization } />}/>
-          <Route path='/MyProject' element={<MyProject autorization = { autorization } />}/>
-          <Route path='/Add' element={<Add_project autorization = { autorization } />}/>
-          <Route path='/MyApplications' element={<Applications autorization={autorization}/>}/>
-          <Route path='/Analytics' element={<Analytics autorization={autorization}/>}/>
-          <Route path='/MyProfil_2' element={<MyProfile_2 autorization={autorization}/>}/>
+          <Route path="/" element={data}/>
+          <Route path='/MyProfil' element={<MyProfile autorization = { autorization } apiAdress = {apiAdress} />}/>
+          <Route path='/MyProject' element={<MyProject autorization = { autorization } apiAdress = {apiAdress} />}/>
+          <Route path='/Add' element={<Add_project autorization = { autorization } apiAdress = {apiAdress} />}/>
+          <Route path='/MyApplications' element={<Applications autorization={autorization} apiAdress = {apiAdress} />}/>
+          <Route path='/Analytics' element={<Analytics autorization={autorization} apiAdress = {apiAdress} />}/>
+          <Route path='/Users_lectures' element={<Users_page autorization={autorization} apiAdress = {apiAdress} />}/>
+          <Route path='/Users_students' element={<Users_page autorization={autorization} apiAdress = {apiAdress} />}/>
+          <Route path='/MyProfil_2' element={<MyProfile_2 autorization={autorization} apiAdress = {apiAdress} />}/>
           <Route path='/Error' element = {<Error error = "Oshibka123"/>}/>
+          {/* <Link to={'/Error'} state={{ from: "404" }}></Link> */}
+          {/*
+            <Redirect to={{
+              pathname: '/Error',
+              state: { Error: 'ErrorText' }
+              }}
+            />
+          */}
         </Routes>
     </>
   );

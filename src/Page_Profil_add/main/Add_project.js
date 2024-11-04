@@ -41,24 +41,23 @@ export default function Add_project(props) {
     const addProjectHandler = (event) => {
         event.preventDefault();
 
-        
-
-        const token = "3b3eda82ea25c5f27c38cc6fa0323d7b17130ecf";
 
         const requestOptions = {
             method: "POST",
             headers: { 
                 Accept: "application/json",
                 "Content-Type": "application/json",
-                "Authorization": "Token 3b3eda82ea25c5f27c38cc6fa0323d7b17130ecf" 
+                "Authorization": "Token 3b536db63d5d938fb7ec03a0a19a06ff66fc0466" 
              },
             body: JSON.stringify(addProjectData)
         };
 
+        for (let i = 0; i< 1; i++){
+            fetch( props.apiAdress + "/create_project/", requestOptions)
+                .then(() => console.log("ADDED"))
+                .catch( error => <Link to="/Error" state={{ from: "occupation" }}/>);
 
-        fetch("http://176.109.107.163:8000/create_project/", requestOptions)
-            .then(() => console.log("ADDED"))
-            .catch( error => <Link to="/Error" state={{ from: "occupation" }}/>);
+        }
     }
 
     // Проверка формы
@@ -145,6 +144,7 @@ export default function Add_project(props) {
             return(["",false])
     }
 
+ 
 
     const dateToDate = (date) => {
         return `${date.getFullYear()}-${String(date.getMonth()+ 1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`
@@ -180,7 +180,8 @@ export default function Add_project(props) {
                 "poster_session_date": dateToDate(date3),
                 "end_date": dateToDate(date4),
                 "description": event.target.description_project.value,
-                "status": project_status,
+                /* "status": project_status, */
+                /*"status":"start_project", */
                 "goals": [event.target.purpose.value],
                 "tasks": [event.target.tasks.value],
                 "result": event.target.result_project.value,
@@ -204,24 +205,7 @@ export default function Add_project(props) {
 
     //list role
     const [prof, setProf] = useState([
-        // {
-        //     id:1,
-        //     title: 'Аналитик',
-        //     title1: "Какой-то хуй",
-        //     status: true
-        // },
-        // {
-        //     id:2,
-        //     title: 'Backend',
-        //     title1: "Какой-то не хуй",
-        //     status: true
-        // },
-        // {
-        //     id:3,
-        //     title: 'ДизАВнер',
-        //     title1: "Какой-то там хуй",
-        //     status: true
-        // }
+
     ])
 
 
@@ -268,12 +252,14 @@ export default function Add_project(props) {
             </div>
             <div class ="recruitment"> 
                 <p>Набор участников </p> 
-                <Popup className="popup_data" trigger={<button class="for_button"> <Calendar_cvg/> <p> {current_date.toLocaleDateString()}-{date_for_recruitment.toLocaleDateString()}</p></button>}>
+                <Popup className="popup_data" trigger={<button class="for_button"> <Calendar_cvg/> <p> {current_date.toLocaleDateString()}-{date_for_recruitment.toLocaleDateString()}</p></button>} modal nested>
                     
                     <Calendar class="react-calendar"
                     onChange={setDate_for_recruitment}
                     value={date_for_recruitment}
-                    minDetail="date">
+                    minDetail="date"
+                    
+                    >
                     </Calendar>
 
                 </Popup>
@@ -292,7 +278,7 @@ export default function Add_project(props) {
 
                     </div>
                     <div class="project_circles_stat_labels1">
-                        <Popup  trigger={<button type="button" class={"project_circles_stat_labels_main_green1 "+ checkBorders.date_checkBorder}>Старт проекта</button>} >
+                        <Popup  trigger={<button type="button" class={"project_circles_stat_labels_main_green1 "+ checkBorders.date_checkBorder}>Старт проекта</button>} modal nested>
                             <Calendar class="react-calendar"
                                 onChange={setDate}
                                 value={date}
@@ -318,11 +304,12 @@ export default function Add_project(props) {
 
                     </div>
                     <div class="project_circles_stat_labels1">
-                        <Popup className="popup_data" trigger={<button type="button" class={"project_circles_stat_labels_main_green1 "+ checkBorders.date2_checkBorder}>Представление проекта</button>} >
+                        <Popup className="popup_data" trigger={<button type="button" class={"project_circles_stat_labels_main_green1 "+ checkBorders.date2_checkBorder}>Представление проекта</button>} modal nested>
                             <Calendar class="react-calendar"
                                 onChange={setDate2}
                                 value={date2}
                                 minDetail="date">
+                                
                             </Calendar>
                         </Popup>
                         <label class={"project_circles_stat_labels_date_green1 "+ checkBorders.date2_checkBorder}>{date2.toLocaleDateString()}</label>
@@ -341,7 +328,7 @@ export default function Add_project(props) {
 
                     </div>
                     <div class="project_circles_stat_labels1">
-                        <Popup className="popup_data" trigger={<button type="button" class={"project_circles_stat_labels_main_gray1 "+ checkBorders.date3_checkBorder}>Постерная сессия</button>} >
+                        <Popup className="popup_data" trigger={<button type="button" class={"project_circles_stat_labels_main_gray1 "+ checkBorders.date3_checkBorder}>Постерная сессия</button>} modal nested>
                             <Calendar class="react-calendar"
                                 onChange={setDate3}
                                 value={date3}
@@ -365,11 +352,12 @@ export default function Add_project(props) {
 
                     </div>
                     <div class="project_circles_stat_labels1">
-                        <Popup className="popup_data" trigger={<button type="button" class={"project_circles_stat_labels_main_gray1 "+ checkBorders.date4_checkBorder}>Защита проекта</button>} >
+                        <Popup className="popup_data" trigger={<button type="button" class={"project_circles_stat_labels_main_gray1 "+ checkBorders.date4_checkBorder}>Защита проекта</button>} modal nested>
                             <Calendar class="react-calendar"
                                 onChange={setDate4}
                                 value={date4}
                                 minDetail="date"
+                                
                             >
                             </Calendar>
                         </Popup>
