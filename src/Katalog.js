@@ -62,32 +62,92 @@ function Try( props ) {
 
   // Функция, которая переносит на страницу проекта
   const GoToProjectHandler = (event) => {
-    const current_id = event.card_data.id;
-    const current_api_adress = props.apiAdress + '/catalog/project/' + current_id + '/';
+    // const current_id = event.card_data.id;
+    // const current_api_adress = props.apiAdress + '/catalog/project/' + current_id + '/';
     //Тут через апишку и айдишник подтягиваем основную дату
 
+    // ВЕРНУТЬ КОГДА ВЕРНЕМСЯ К СЕРВЕРУ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    // fetch(current_api_adress)
+    //   .then(response => response.json())
+    //   .then(data => 
 
-    fetch(current_api_adress)
-      .then(response => response.json())
-      .then(data => 
-
-        setKatallogData((previousState) => {
+    //     setKatallogData((previousState) => {
       
 
-          return{
+    //       return{
     
-          ...previousState,
-          // card_data = {event.card_data}
-          page : <Page_Project data = {data}  autorization = {props.autorization} GoToBackPageMain = {GoToBackPageMainHandler}/>,
-          style_main_div : "style_main_div",
+    //       ...previousState,
+    //       // card_data = {event.card_data}
+    //       page : <Page_Project data = {data}  autorization = {props.autorization} GoToBackPageMain = {GoToBackPageMainHandler}/>,
+    //       style_main_div : "style_main_div",
       
-          }})
+    //       }})
         
-       )
-      .catch(error => console.error(error));
+    //    )
+    //   .catch(error => console.error(error));
 
+    setKatallogData((previousState) => {
+      
+            return{
+            ...previousState,
+            // card_data = {event.card_data}
+            page : <Page_Project data = {
+              {
+              "title": "Умное название",
+              "source": "Идеи Шахи",
+              "hashtags": [
+                  "Django",
+                  "REST"
+              ],
+              "duration": 16,
+              "school": "ИШИТР",
+              "type": "НИРС",
+              "course": [
+                  "1"
+              ],
+              "start_date": "2023-09-01",
+              "get_member_end": "2023-01-31",
+              "project_presentation_date": "2023-11-30",
+              "poster_session_date": "2024-08-15",
+              "end_date": "2024-10-01",
+              "description": "стать мигрантом как Шаха",
+              
+              "goals": [
+                  "Встать с колен",
+                  "Открыть глаза"
+              ],
+              "tasks": [
+                  "Достигнуть того, чего никто не смог"
+              ],
+              "result": "Готовый проект",
+              "roles": [
+                  "back",
+                  "front"
+              ],
+              "requirements": [
+                  {
+                      
+                      "role": "back",
+                      "description": [
+                          "БЫТЬ РЕАЛЬНА КРУ",
+                          "петь гойду по утрам",
+                          "знать текст \"Я русский\" наизусть"
+                      ]
+                  },
+                  {
+                      "role": "front",
+                      "description": [
+                          "БЫТЬ ПОЧТИ КРУ",
+                          "восхвалять газманова"
+                      ]
+                  }
+              ]
+          }
+          }  autorization = {props.autorization} GoToBackPageMain = {GoToBackPageMainHandler}/>,
+            style_main_div : "style_main_div",
+        
+            }})
 
-    
   }
 
   // Состояние фильтра
@@ -247,7 +307,25 @@ function Try( props ) {
                                             card_data={data} 
                                             //data={data.data} 
                                             GoToProject = {GoToProjectHandler} />
-                                            ))}</a>
+                                            ))}
+                                            
+                                            <Conteiner
+                                            card_data={{
+                                              "id": 0,
+                                              "title": "Название проекта",
+                                              "source": "Какой-то источник проекта",
+                                              "hashtags": [ "Хэштег1", "Хэштег2" ],
+                                              "type": "УИРС",
+                                              "school": "ИШИТР",
+                                              "roles": [ "Роль", "Роль 1", "Роль 2" ],
+                                              "date_end": "2005-04-17",
+                                              "duration": 5,
+                                              "course": ["1","2"],
+                                              "get_member_end" : "2005-04-17",
+                                            }} 
+                                            GoToProject = {GoToProjectHandler} />
+
+                                            </a>
 
                             <CatalogProjectFooter onSelectNewPage={SelectNewPageHandler} lengthThis={KatallogData.maxCount} CurrentPage={KatallogData.current_position}/>
 

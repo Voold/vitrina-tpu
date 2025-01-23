@@ -1,4 +1,5 @@
 import Circle_Stat from '../../UI/Circle_Stat/Circle_Stat.js';
+import Sprints from '../Sprints/Sprints.js';
 import './Main.css'
 import Role from './Role/Role.js'
 
@@ -124,6 +125,7 @@ function Main(props) {
             </div>
 
             <Circle_Stat status = {props.data.status} data = {props.data}/>
+            <Sprints/>
 
             <p class='Role_text_2'>Роли</p>
             <div class='Cont_Role_2'>

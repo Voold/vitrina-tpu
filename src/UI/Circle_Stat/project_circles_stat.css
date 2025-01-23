@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     /* overflow: hidden; */
+    margin-bottom: 12%;
 }
 
 .white_circle_background .green_circle_background{
