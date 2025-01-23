@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.751d16cb.css",
-    "main.js": "/static/js/main.ed65d7d5.js",
+    "main.css": "/static/css/main.04b6f195.css",
+    "main.js": "/static/js/main.84c70a56.js",
     "static/media/ALS_Sirius_Bold_0.95.otf": "/static/media/ALS_Sirius_Bold_0.95.638d7e3f3eca33ff3fb1.otf",
     "static/media/ALS_Sirius_Regular_0.95.otf": "/static/media/ALS_Sirius_Regular_0.95.c41245c8e1e7683436fa.otf",
-    "static/media/le_zalupa.svg": "/static/media/le_zalupa.f5af8fe03ba3eb8f182c5ca8625f57f9.svg",
+    "static/media/le_zalupa.svg": "/static/media/le_zalupa.113c1b2bdcffe7110453201699fd77c7.svg",
     "static/media/ALSTPU.otf": "/static/media/ALSTPU.e3df9a961b111b1a23e0.otf",
     "static/media/load.gif": "/static/media/load.742ff89c4ca23122d0ab.gif",
-    "static/media/ЛоготипВитринаПроектов.svg": "/static/media/ЛоготипВитринаПроектов.d3b65a07b56f359f9a18f24a8e5c9c70.svg",
-    "static/media/mounth.svg": "/static/media/mounth.fa0234d68f3d27b304011f3105d19164.svg",
-    "static/media/ЛогоТПУ.svg": "/static/media/ЛогоТПУ.e0dcdf48e1671181938f8c1fe719e4e7.svg",
-    "static/media/school.svg": "/static/media/school.7e9bdd6d713267419492ffddf3cf98ea.svg",
-    "static/media/type_project.svg": "/static/media/type_project.23300aef068c87164febcc661e9bc99c.svg",
-    "static/media/icon_for_mobile_adaptation_figma.svg": "/static/media/icon_for_mobile_adaptation_figma.b2e1337a52d38848c8aa.svg",
-    "static/media/icon_man.svg": "/static/media/icon_man.596749837fcd011f03a11b280fb5ae0a.svg",
-    "static/media/oke.svg": "/static/media/oke.53835a9c3757e95a0fe6f56bdbb67d0e.svg",
-    "static/media/for_chat.svg": "/static/media/for_chat.d1d929415cbcde158607d9643789acb7.svg",
-    "static/media/calendar.svg": "/static/media/calendar.3d2526645f794cfc2ee6e7da0df9ee84.svg",
+    "static/media/ЛоготипВитринаПроектов.svg": "/static/media/ЛоготипВитринаПроектов.097d3df6d6a414384b4ebad1dea39158.svg",
+    "static/media/mounth.svg": "/static/media/mounth.75c3aac7a31d798667be99e0fdf82a57.svg",
+    "static/media/ЛогоТПУ.svg": "/static/media/ЛогоТПУ.ba8240ed8ddb3f9a83941d2c89c4ba8b.svg",
+    "static/media/school.svg": "/static/media/school.b4bcdead8c9f626c20be7e52395e78a7.svg",
+    "static/media/type_project.svg": "/static/media/type_project.4b3c7b5d9551ea75d82df80b76941b41.svg",
+    "static/media/icon_for_mobile_adaptation_figma.svg": "/static/media/icon_for_mobile_adaptation_figma.589be28c9cb4a91ea910.svg",
+    "static/media/icon_man.svg": "/static/media/icon_man.af7dbc67fbe9fa2e4f732483f3b1c832.svg",
+    "static/media/oke.svg": "/static/media/oke.8ed16010852bf6d1e55508df05ef62e9.svg",
+    "static/media/for_chat.svg": "/static/media/for_chat.ea6176d98a7fcf8c19c9f0ad6806f5a3.svg",
+    "static/media/calendar.svg": "/static/media/calendar.b01a8451d1bc0c294259edaa8e0dd112.svg",
     "index.html": "/index.html",
-    "static/media/not_oke.svg": "/static/media/not_oke.72c9706b8a3f19772d309aad812e3f6e.svg",
-    "static/media/picture.svg": "/static/media/picture.acb5d65ba311e8a0eded.svg",
-    "static/media/big_stick.svg": "/static/media/big_stick.a8273fc915576670eb6a7b76bfcbeb18.svg",
-    "main.751d16cb.css.map": "/static/css/main.751d16cb.css.map",
-    "main.ed65d7d5.js.map": "/static/js/main.ed65d7d5.js.map"
+    "static/media/not_oke.svg": "/static/media/not_oke.70f7ec17ee471bcb570f1331ee2c8d43.svg",
+    "static/media/picture.svg": "/static/media/picture.ff3b7e503f9c02f4f4c6.svg",
+    "static/media/big_stick.svg": "/static/media/big_stick.5fd7027f614c2b4d2421a1120caf2cba.svg",
+    "main.04b6f195.css.map": "/static/css/main.04b6f195.css.map",
+    "main.84c70a56.js.map": "/static/js/main.84c70a56.js.map"
   },
   "entrypoints": [
-    "static/css/main.751d16cb.css",
-    "static/js/main.ed65d7d5.js"
+    "static/css/main.04b6f195.css",
+    "static/js/main.84c70a56.js"
   ]
 }
