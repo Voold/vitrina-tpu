@@ -1,5 +1,6 @@
 .project_circles_stat1{
-    border: 1px solid #000;
+    
+
     
     /* min-width: 590px; */
     width: 96%;
@@ -9,18 +10,19 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    padding-left: 4%;
     /* overflow: hidden; */
 }
 
 .project_circles_stat_line1{
     
     height: 0px;
-    width: 90%;
+    width: 82%;
     border: 3px solid rgba(0, 0, 0, 0.3);
     position: absolute;
     z-index: -1;
     top: 15px;
-    right: 4%;
+    right: 8%;
 }
 
 .project_circles_stat_circle-block1{
@@ -50,7 +52,7 @@
     text-align: center;
     font-family: Inter;
     font-weight: 700;
-    font-size: 16px;
+    font-size: min( 16px, calc(12px + 4 * ((100vw - 320px) / 1024)));
     height: 40px;
     width: 114px;
     margin-left: -35px;
@@ -70,7 +72,7 @@
     width: 100px;
     height: 40px;
     font-family: Inter;
-    font-size: 12px;
+    font-size: min( 10px, calc(8px + 4 * ((100vw - 320px) / 1024)));
     font-weight: 700;
     line-height: 15px;
     color:rgb(127, 127, 127);
@@ -82,4 +84,23 @@
 
 .project_circles_stat_labels_date_gray1, .project_circles_stat_labels_main_gray1{
     color:rgb(127, 127, 127);
+}
+
+
+@media (max-width: 770px){
+    .project_circles_stat_labels_main_green1, .project_circles_stat_labels_main_gray1{
+        font-size: min( 16px, calc(12px + 2 * ((100vw - 660px) / 1024)));
+        margin-left: -24px;
+        width: 90px;
+    }
+    .project_circles_stat_labels_date_green1, .project_circles_stat_labels_date_gray1{
+        margin-left: -2px;
+        width: 50px;
+        margin-top: 2px;
+    }
+    
+}
+
+@media (max-width: 473px) {
+
 }
