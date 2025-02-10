@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.04b6f195.css",
-    "main.js": "/static/js/main.bc1530a1.js",
+    "main.css": "/static/css/main.89e98f4f.css",
+    "main.js": "/static/js/main.5cc23146.js",
     "static/media/ALS_Sirius_Bold_0.95.otf": "/static/media/ALS_Sirius_Bold_0.95.638d7e3f3eca33ff3fb1.otf",
     "static/media/ALS_Sirius_Regular_0.95.otf": "/static/media/ALS_Sirius_Regular_0.95.c41245c8e1e7683436fa.otf",
     "static/media/le_zalupa.svg": "/static/media/le_zalupa.113c1b2bdcffe7110453201699fd77c7.svg",
@@ -21,11 +21,11 @@
     "static/media/not_oke.svg": "/static/media/not_oke.70f7ec17ee471bcb570f1331ee2c8d43.svg",
     "static/media/picture.svg": "/static/media/picture.ff3b7e503f9c02f4f4c6.svg",
     "static/media/big_stick.svg": "/static/media/big_stick.5fd7027f614c2b4d2421a1120caf2cba.svg",
-    "main.04b6f195.css.map": "/static/css/main.04b6f195.css.map",
-    "main.bc1530a1.js.map": "/static/js/main.bc1530a1.js.map"
+    "main.89e98f4f.css.map": "/static/css/main.89e98f4f.css.map",
+    "main.5cc23146.js.map": "/static/js/main.5cc23146.js.map"
   },
   "entrypoints": [
-    "static/css/main.04b6f195.css",
-    "static/js/main.bc1530a1.js"
+    "static/css/main.89e98f4f.css",
+    "static/js/main.5cc23146.js"
   ]
 }
