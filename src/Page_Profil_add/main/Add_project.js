@@ -17,6 +17,10 @@ import { Link } from "react-router-dom";
 
 export default function Add_project(props) {
 
+    const innitialDate = new Date();
+    let maxDate = new Date (innitialDate.setFullYear(new Date().getFullYear() + 5));
+    let minDate = new Date (innitialDate.setFullYear(new Date().getFullYear() - 5));
+
     const [checkStatus, setCheckStatus] = useState(false)
     const [checkBorders, setCheckBorders] = useState({
         title_checkBorder: '',
@@ -162,7 +166,7 @@ export default function Add_project(props) {
             project_status = "project_presentation"
         if (current_date > date3)
             project_status = "poster_session"
-        if (current_date > date)
+        if (current_date > date4)
             project_status = "project_protection"
 
 
@@ -251,14 +255,15 @@ export default function Add_project(props) {
                 <input class = { checkBorders.source_checkBorder} name="source_project" placeholder="Источник проекта"/>
             </div>
             <div class ="recruitment"> 
-                <p>Набор участников </p> 
-                <Popup className="popup_data" trigger={<button class="for_button"> <Calendar_cvg/> <p> {current_date.toLocaleDateString()}-{date_for_recruitment.toLocaleDateString()}</p></button>} modal nested>
+                <p>Набор участников</p> 
+                <Popup className="popup_data" trigger={<button type="button" class="for_button"> <p><Calendar_cvg/>  {current_date.toLocaleDateString()}-{date_for_recruitment.toLocaleDateString()}  </p></button>} modal nested>
                     
                     <Calendar class="react-calendar"
                     onChange={setDate_for_recruitment}
                     value={date_for_recruitment}
                     minDetail="date"
-                    
+                    minDate={minDate}
+                    maxDate={maxDate}
                     >
                     </Calendar>
 
@@ -283,8 +288,8 @@ export default function Add_project(props) {
                                 onChange={setDate}
                                 value={date}
                                 minDetail="date"
-                                minDate={new Date()}
-                                maxDate={new Date()}
+                                minDate={minDate}
+                                maxDate={maxDate}
                             >
                             </Calendar>
                         </Popup>
@@ -309,7 +314,8 @@ export default function Add_project(props) {
                                 onChange={setDate2}
                                 value={date2}
                                 minDetail="date">
-                                
+                                minDate={minDate}
+                                maxDate={maxDate}
                             </Calendar>
                         </Popup>
                         <label class={"project_circles_stat_labels_date_green1 "+ checkBorders.date2_checkBorder}>{date2.toLocaleDateString()}</label>
@@ -333,6 +339,8 @@ export default function Add_project(props) {
                                 onChange={setDate3}
                                 value={date3}
                                 minDetail="date">
+                                minDate={minDate}
+                                maxDate={maxDate}
                             </Calendar>
                         </Popup>
                         <label class={"project_circles_stat_labels_date_gray1 "+ checkBorders.date3_checkBorder}>{date3.toLocaleDateString()}</label>
@@ -357,7 +365,8 @@ export default function Add_project(props) {
                                 onChange={setDate4}
                                 value={date4}
                                 minDetail="date"
-                                
+                                minDate={minDate}
+                                maxDate={maxDate}
                             >
                             </Calendar>
                         </Popup>
@@ -396,10 +405,13 @@ export default function Add_project(props) {
             </div>
             <div class="select_type_project">
                 <p>Выберите тип проекта</p>
-                <button><p>ВКР</p></button>
-                <button><p>НИРС</p></button>
-                <button><p>УИРС</p></button>
-                <button><p>Творческий проект</p></button>
+                <div class = "but_container_type_project">
+                    <button type="button"><p>ВКР</p></button>
+                    <button type="button"><p>НИРС</p></button>
+                    <button type="button"><p>УИРС</p></button>
+  
+                    <button type="button"><p>Творческий проект</p></button>
+                </div>
             </div>
             <p class="for_p_opis">Опишите свой проект</p>
             <div class="inline_for_items">
@@ -410,6 +422,7 @@ export default function Add_project(props) {
                 <div class="purpose">
                     <textarea class={checkBorders.tasks_checkBorder} name="tasks" placeholder="Какие задачи у вашего проекта?" type="text"></textarea>
                 </div>
+                
             </div>  
             <div class="description_project">
                 <textarea class={"scroll "+checkBorders.result_checkBorder} name="result_project" placeholder="Ожидаемый результат?" type="text"></textarea>
