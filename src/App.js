@@ -2,7 +2,8 @@ import Pageprogect from './Page_project.js';
 import Katalog from './Katalog.js';
 
 import Add_project from './Page_Profil_add/Add_proj.jsx';
-import Applications from './Page_application/Application.js';
+import Applications from './Page_my_applications/Page_my_applications.jsx';
+// import Applications from './Page_application/Application.js';
 import MyProfile_2 from './Page_Profil_2/my_profil_2.js';
 import MyProfile from './Page_Profil_myprofil/Profil_myprofil.js'
 import MyProject from './Page_Profil_project/Profil_myproject.js';
