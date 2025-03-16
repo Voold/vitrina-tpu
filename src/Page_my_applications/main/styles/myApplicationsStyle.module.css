@@ -1,0 +1,66 @@
+ 
+/* @import './../../Global_Styles/fonts.css'; */
+
+.rootStyle {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+  border: 1px solid grey;
+}
+
+.iterFontStyle {
+  font-family: "Inter";
+  color:var(--color-red);
+  composes: bigText from './../../../Global_Styles/fontsStyles.module.css';
+}
+
+
+.headApplications{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleBlock {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.titleLabel {
+  color:var(--light-green);
+}
+.subLabel {
+  display: inline-flex;
+  align-items: center;
+  composes: mediumSmallText from './../../../Global_Styles/fontsStyles.module.css';
+}
+
+.newApplicationsSVG {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ff0000;
+}
+
+.subTopBlock {
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  width: max-content;
+}
+
+.sortMenu {
+  border: 1px solid #0567d7;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.rejectButton {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  height: 50%;
+}

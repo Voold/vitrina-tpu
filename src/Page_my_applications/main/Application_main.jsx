@@ -1,30 +1,21 @@
 import React, { Component }  from "react";
 
-import style from "./myApplicationsStyle.module.css";
+import style from "./styles/myApplicationsStyle.module.css";
+
 import Block_application from "../components/Block_application.jsx";
+import RejectButtton from "./RejectButton.jsx";
+import DropDownSort from "./DropDownSort.jsx";
 
 export default function Page_my_applications(props) {
-  // получаем метод для генерации классов jss
-
-
-  // <div>
-  //     123
-  // </div>
-  // <div className={classes.root}>
-  //     {console.log(classes)}
-  //   <h1>That's JssComponent</h1>
-  //   <h2 className="basic_h2">I use JSS</h2>
-  //   <div className={classes.content_div}>
-  //     Any Text
-  //   </div>
-  // </div>
   
 
   return (
-    <div className={style.root}>
-      <div className={style.topApplication}>
+    <div className={style.rootStyle}>
+
+      <div className={style.headApplications}>
+
         <div className={style.titleBlock}>
-          <label className={style.titleLabel}>Мои заявки</label>
+          <label className={`${style.titleLabel} ${style.iterFontStyle}`}>Мои заявки</label>
           <label className={style.subLabel}>
             <div className={style.newApplicationsSVG}>
               <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,13 +28,15 @@ export default function Page_my_applications(props) {
 
         <div className={style.subTopBlock}>
           <div className={style.sortMenu}>
-
+            <DropDownSort/>
           </div>
-          <div className={style.rejectButtton}>
-
+          <div className={style.rejectButton}>
+            <RejectButtton/>
           </div>
         </div>
+
       </div>
+
       <div className={style.newApplicationsBlock}>
         <Block_application/>
       </div>

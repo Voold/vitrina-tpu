@@ -14,6 +14,8 @@ import Analytics from './Page_analytics/Analytics.js';
 import Error from './Error/Error.js';
 import Users_page from './Users_page/Users_page.js';
 
+import "./Global_Styles/colors.css"
+
 function App() {
 
   // адрес бэка

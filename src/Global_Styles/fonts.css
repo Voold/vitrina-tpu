@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "ALS Sirius";
+  src: url("/src/Shrifts/ALS_Sirius_Regular_0.95.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/src/Shrifts/ALS_Sirius_Bold_0.95.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ALSTPU";
+  src: url("/src/Shrifts/ALSTPU.otf") format("opentype");
+}
+
+.mediumSmallText{
+  color: #000;
+  font-family: ALS Sirius;
+  font-size: min( 24px, calc(16px + 8 * ((100vw - 320px) / 1024)));
+  font-weight: 700;
+}
+
+.bigText{
+  color: #28BE46;
+  font-family: Inter;
+  font-size: min( 40px, calc(25px + 8 * ((100vw - 320px) / 1024)));
+  font-weight: 700;
+}
+
+.mediumText{
+  color: #000000;
+  font-family: Inter;
+  font-size: min( 30px, calc(18px + 8 * ((100vw - 320px) / 1024)));
+  font-weight: 700;
+}
+
+.SmallText{
+  color: #000;
+  font-family: ALS Sirius;
+  font-size: min( 18px, calc(12px + 8 * ((100vw - 320px) / 1024)));
+  font-weight: 700;
+}
