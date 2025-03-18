@@ -4,6 +4,7 @@
 .rootStyle {
   width: 80%;
   margin: 0 auto;
+  margin-top: 2%;
   max-width: 1200px;
   border: 1px solid grey;
 }
@@ -22,7 +23,6 @@
 }
 
 .titleBlock {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   width: auto;
@@ -34,24 +34,26 @@
 .subLabel {
   display: inline-flex;
   align-items: center;
+  align-items: center;
   composes: mediumSmallText from './../../../Global_Styles/fontsStyles.module.css';
 }
 
 .newApplicationsSVG {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #ff0000;
+  composes: mediumSmallSVG from './../../../Global_Styles/fontsStyles.module.css';
+  height: 80%;
+  margin-right: 2%;
 }
 
 .subTopBlock {
   display: flex;
   flex-direction: column;
   align-items:center ;
-  width: max-content;
+  width: 40%;
+  max-width: 231px;
+  min-width: max-content;
 }
 
 .sortMenu {
-  border: 1px solid #0567d7;
   display: flex;
   align-items: center;
   width: 100%;
@@ -63,4 +65,5 @@
   width: max-content;
   align-items: center;
   height: 50%;
+  width: 100%;
 }

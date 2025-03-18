@@ -7,33 +7,123 @@
   user-select: none;
   background-color: var(--light-gray);
   border-radius: 8px;
+  text-align: center;
 }
 
 .sortTitle{
   display: flex;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
+  height: 100%;
+  justify-content: center;
+  align-items: baseline;
   color: var(--color-gray);
   composes: smallText from './../../../Global_Styles/fontsStyles.module.css';
 }
 
+.titleActiveBorder{
+  border-radius: 8px 8px 0 0;
+}
+
 .sortTitleSVG {
-  margin-top: 2%;
-  border: 1px solid #000;
-  composes: smallSVG from './../../../Global_Styles/fontsStyles.module.css';
+  cursor: pointer;
+  transition: 300ms;
+  margin-left: 6%; 
+  composes: mediumSVG from './../../../Global_Styles/fontsStyles.module.css';
+}
+
+.rotatedArrow{
+  rotate: 180deg;
+  transition: 300ms;
 }
 
 .hidden{
-  display: none;
+  z-index: -999;
+  display: hidden;
+  opacity: 0;
+  top: 0;
+  height: 0;
+  /* transition: 500ms; */
+}
+
+.hidden > li{
+  position: absolute;
+  transition: 500ms;
 }
 
 .shown{
   display: flex;
-  flex-direction: column;
-  position: absolute;
+  opacity: 1;
+  top: auto;
+  height: auto;
+  transition: 500ms;
 }
 
 .dropdown{
   background-color: var(--light-gray);
+  composes: smallText from './../../../Global_Styles/fontsStyles.module.css';
+  color: var(--color-gray);
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: start;
+  list-style: none;
+  padding: 2% 0 2% 0;
+  margin: 0;
+  left: 0;
+  border-radius: 0 0 8px 8px;
+  /* transition: 500ms; */
+}
+
+.dropdown > li{
+  padding:  0 4% 0 6%;
+  
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown > li:hover{
+  color: var(--color-white);
+  stroke: var(--color-white);
+  background-color: var(--light-dark-gray);
+  font-weight: 900;
+  padding: 1% 4% 1% 7%;
+  border-radius: 0 0 4px 4px;
+}
+
+.dropdown > li:hover .circleSVG{
+  stroke: var(--color-white);
+}
+
+.circleSVG{
+  transition: 300ms;
+  stroke: var(--color-gray);
+  width: 20px;
+  margin-left: 6%; 
+  composes: smallSVG from './../../../Global_Styles/fontsStyles.module.css';
+}
+
+.sepLine{
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  border-top: 1px solid var(--color-gray);
+}
+
+.sepLine:hover{
+  padding: 0;
+}
+
+.approved{
+
+}
+
+.rejected{
+
+}
+
+.new{
+
 }

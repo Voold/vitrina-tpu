@@ -21,7 +21,7 @@
 }
 
 .mediumSmallSVG{
-  width: min( 24px, calc(16px + 8 * ((100vw - 320px) / 1024)));
+  width: min( 22px, calc(14px + 8 * ((100vw - 320px) / 1024)));
 }
 
 .bigText{
@@ -43,16 +43,27 @@
 }
 
 .mediumSVG{
-  width: min( 30px, calc(18px + 8 * ((100vw - 320px) / 1024)));
+  width: min( 24px, calc(14px + 8 * ((100vw - 320px) / 1024)));
 }
 
 .smallText{
   color: #000;
   font-family: ALS Sirius;
-  font-size: min( 18px, calc(12px + 8 * ((100vw - 320px) / 1024)));
+  font-size: min( 20px, calc(14px + 8 * ((100vw - 320px) / 1024)));
   font-weight: 700;
 }
 
 .smallSVG{
-  width: min( 18px, calc(12px + 8 * ((100vw - 320px) / 1024)));
+  width: min( 20px, calc(14px + 8 * ((100vw - 320px) / 1024)));
+}
+
+.tinyText{
+  color: #000;
+  font-family: ALS Sirius;
+  font-size: min( 16px, calc(10px + 8 * ((100vw - 320px) / 1024)));
+  font-weight: 300;
+}
+
+.tinySVG{
+  width: min( 16px, calc(10px + 8 * ((100vw - 320px) / 1024)));
 }

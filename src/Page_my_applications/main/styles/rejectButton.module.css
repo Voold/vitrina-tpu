@@ -13,6 +13,11 @@
   user-select: none;
   display: flex;
   align-items: center;
+  text-align: center;
+}
+
+.butBody > label {
+  width: 100%;
 }
 
 .butBody:hover{
