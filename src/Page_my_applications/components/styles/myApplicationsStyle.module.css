@@ -5,8 +5,7 @@
   width: 80%;
   margin: 0 auto;
   margin-top: 2%;
-  max-width: 1200px;
-  border: 1px solid grey;
+  max-width: 1000px;
 }
 
 .iterFontStyle {
@@ -20,6 +19,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5%;
 }
 
 .titleBlock {

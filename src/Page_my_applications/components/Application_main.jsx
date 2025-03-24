@@ -2,9 +2,10 @@ import React, { Component }  from "react";
 
 import style from "./styles/myApplicationsStyle.module.css";
 
-import Block_application from "../components/Block_application.jsx";
+import Block_application from "./Block_application.jsx";
 import RejectButtton from "./RejectButton.jsx";
 import DropDownSort from "./DropDownSort.jsx";
+import Block_Container from "../../UI/Blocks_Container/Blocks_Containers.jsx";
 
 export default function Page_my_applications(props) {
   
@@ -39,6 +40,9 @@ export default function Page_my_applications(props) {
 
       <div className={style.newApplicationsBlock}>
         <Block_application/>
+        <Block_application/>
+        <Block_application/>
+        <Block_Container/>
       </div>
       <div className={style.splitter}></div>
 

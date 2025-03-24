@@ -1,0 +1,149 @@
+.containerBody {
+  background-color: var(--light-gray);
+  border-radius: 16px;
+  width: 96%;
+  padding: 1%;
+  padding-left: 3%;
+  -webkit-box-shadow: 0px 0px 4px -3px var(--color-gray);
+  -moz-box-shadow: 0px 0px 4px -3px var(--color-gray);
+  box-shadow: 0px 0px 4px -3px var(--color-gray);
+  transition: 200ms;
+  margin: 2% 0;
+}
+
+.containerBody:hover{
+  -webkit-box-shadow: 0px 0px 14px -3px var(--dark-gray);
+  -moz-box-shadow: 0px 0px 14px -3px var(--dark-gray);
+  box-shadow: 0px 0px 14px -3px var(--dark-gray);
+  transition: 200ms;
+}
+
+.containerBody > table{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+
+
+.containerBody > table td ,th{
+}
+
+.containerBody > table td:last-child{
+  width: 2%;
+}
+
+.topLineTitle{
+  display: flex;
+  flex-direction: column;
+}
+
+.topLineTitle > label {
+  display: inline-block;
+}
+
+.projectTitle{
+  composes: mediumSmallText from './../../../Global_Styles/fontsStyles.module.css';
+  color: var(--color-gray);
+}
+
+.projectSubTitle{
+  composes: tinyText from './../../../Global_Styles/fontsStyles.module.css';
+  font-weight: 900;
+  color: var(--color-gray);
+}
+
+.projectInfoBar {
+  composes: tinyText from './../../../Global_Styles/fontsStyles.module.css';
+  display: flex;
+}
+
+.projectInfoBar > div {
+  align-items: center;
+  display: flex;
+}
+
+.projectInfoBar > div > label {
+  width: auto;
+  text-wrap: nowrap;
+  padding: 0 3%;
+}
+
+.SVG_ProjectInfoBar {
+  composes: bigSVG from './../../../Global_Styles/fontsStyles.module.css';
+  padding: 0 4%;
+}
+
+
+
+
+.projectStatus{
+  composes: ultraTinyText from './../../../Global_Styles/fontsStyles.module.css';
+  align-items: center;
+}
+
+/* .containerBody > table td:nth-child(3){
+  background-color: #d30000;
+} */
+
+
+.projectStatus > label{
+  display: block;
+  text-align: center;
+
+  font-weight: 900;
+}
+
+.buttonsBlock{
+  display: flex;
+  justify-content: center;
+}
+
+.buttonSVG{
+  cursor: pointer;
+  margin: 0 4%;
+  composes: bigSVG from './../../../Global_Styles/fontsStyles.module.css';
+}
+
+.buttonSVG:first-child{
+  fill: var(--color-green);
+}
+
+.buttonSVG:last-child{
+  fill: var(--color-red);
+}
+
+.buttonSVG:first-child:hover{
+  fill: var(--dark-green);
+}
+
+.buttonSVG:last-child:hover{
+  fill: var(--dark-red);
+}
+
+.projectStatus > label:first-child{
+  background-color: var(--color-gray);
+  color: var(--color-white);
+  border-radius: 15px;
+  text-wrap-mode: nowrap;
+  padding: 2%;
+  max-width: min-content;
+  margin: 0 auto;
+}
+
+.projectStatus > label:last-child{
+  color: var(--color-gray);
+}
+
+
+@media (max-width: 380px) {
+  
+  .projectStatus > label:first-child{
+    border-radius: 2px;
+  }
+  .buttonSVG{
+    width: 20%;
+  }
+  
+  
+}

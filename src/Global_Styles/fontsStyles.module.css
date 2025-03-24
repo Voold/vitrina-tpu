@@ -32,7 +32,7 @@
 }
 
 .bigSVG{
-  width: min( 40px, calc(25px + 8 * ((100vw - 320px) / 1024)));
+  width: min( 50px, calc(25px + 10 * ((100vw - 320px) / 1024)));
 }
 
 .mediumText{
@@ -61,6 +61,18 @@
   color: #000;
   font-family: ALS Sirius;
   font-size: min( 16px, calc(10px + 8 * ((100vw - 320px) / 1024)));
+  font-weight: 300;
+}
+
+.tinySVG{
+  width: min( 16px, calc(10px + 8 * ((100vw - 320px) / 1024)));
+}
+
+
+.ultraTinyText{
+  color: #000;
+  font-family: ALS Sirius;
+  font-size: min( 14px, calc(8px + 8 * ((100vw - 320px) / 1024)));
   font-weight: 300;
 }
 

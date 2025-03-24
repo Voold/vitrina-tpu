@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../UI/commonUI/flex_type_page.css"
 import Navbar from "../UI/Navbar/Navbar.js";
 import Header from "../UI/Header/Header.js";
-import Application_main from "./main/Application_main.jsx";
+import Application_main from "./components/Application_main.jsx";
 
 export default function Page_my_applications(props) {
 

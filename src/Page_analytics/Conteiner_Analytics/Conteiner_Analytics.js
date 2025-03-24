@@ -16,6 +16,8 @@ export default function Conteiner_Analytics(props) {
     props.GoToProject(props);};
 
   const dateToDate = (date) => {
+
+    console.log(props);
     return date.split("-").reverse().join(".");
   }
 
