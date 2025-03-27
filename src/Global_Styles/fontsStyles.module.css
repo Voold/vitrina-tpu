@@ -13,6 +13,10 @@
   src: url("/src/Shrifts/ALSTPU.otf") format("opentype");
 }
 
+.gigaSVG{
+  width: min( 100px, calc(50px + 10 * ((100vw - 320px) / 1024)));
+}
+
 .mediumSmallText{
   color: #000;
   font-family: ALS Sirius;

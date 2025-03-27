@@ -1,0 +1,50 @@
+.mainTitle{
+  composes: mediumSmallText from './../../Global_Styles/fontsStyles.module.css';
+  max-width: 30vw;
+  margin: 0 auto;
+  margin-bottom: 7%;
+  text-align: center;
+}
+
+.buttonsBlock{
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttonYes, .buttonNo{
+  composes: smallText from './../../Global_Styles/fontsStyles.module.css';
+  padding: 2% 4%;
+  color: var(--color-white);
+  border-radius: 5px;
+  cursor: pointer;
+  width: max-content;
+}
+
+.buttonYes{
+  background-color: var(--color-green);
+}
+
+.buttonYes:hover{
+  background-color: var(--dark-green);
+}
+
+.buttonNo{
+  background-color: var(--color-red);
+}
+
+.buttonNo:hover{
+  background-color: var(--dark-red);
+}
+
+
+@media (max-width: 380px) {
+  
+  .mainTitle{
+
+    max-width: 60vw;
+
+  }
+}
+

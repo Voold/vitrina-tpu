@@ -6,6 +6,7 @@ import Block_application from "./Block_application.jsx";
 import RejectButtton from "./RejectButton.jsx";
 import DropDownSort from "./DropDownSort.jsx";
 import Block_Container from "../../UI/Blocks_Container/Blocks_Containers.jsx";
+import Popup_Vitrina from "../../UI/Popup_Vitrina/Popup_Vitrina.jsx";
 
 export default function Page_my_applications(props) {
   
@@ -39,10 +40,16 @@ export default function Page_my_applications(props) {
       </div>
 
       <div className={style.newApplicationsBlock}>
-        <Block_application/>
-        <Block_application/>
-        <Block_application/>
-        <Block_Container/>
+        <Block_Container 
+          container = { (props, into_card) =>     
+            <Popup_Vitrina target={<Block_application {...props}/>} {...into_card}/>
+          }
+        />
+      </div>
+      <div className={style.splitter}></div>
+
+      <div className={style.completedApplicationsBlock}>
+        <Block_Container container = { (props) => <Block_application {...props}/> } />
       </div>
       <div className={style.splitter}></div>
 

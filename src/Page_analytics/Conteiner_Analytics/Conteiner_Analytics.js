@@ -100,6 +100,7 @@ Conteiner_Analytics.defaultProps = {
     "school": "Школа",
     "roles": [ "Роль", "Роль 1", "Роль 2" ],
     "date_end": "2005-04-17",
+    "get_member_end": "2005-04-17",
     "duration": 0,
     "course": ["1","2"],
   },

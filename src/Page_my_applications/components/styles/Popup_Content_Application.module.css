@@ -1,0 +1,124 @@
+.mainContainer{
+  width: 60vw;
+  text-decoration: none;
+  color: #000;
+  /* padding: 2%; */
+  color: var(--color-gray);
+}
+
+.titleBlock{
+  display: flex;
+  justify-content: center;
+}
+
+.userSVG{
+  composes: gigaSVG from './../../../Global_Styles/fontsStyles.module.css';
+}
+
+.userData{
+  margin: 0 auto;
+  margin-top: 2%;
+  padding: 0 1%;
+  width: max-content;
+  display: flex;
+}
+
+.userName{
+
+}
+
+.userDescript{
+  margin: 0 15px;
+}
+
+.userSch{
+  composes: smallText from './../../../Global_Styles/fontsStyles.module.css';
+  color: var(--color-gray);
+}
+
+.applicationStatus{
+  composes: smallText from './../../../Global_Styles/fontsStyles.module.css';
+  width: max-content;
+  padding: 0 2%;
+  border:  solid var(--color-red);
+  background-color: var(--color-red);
+  border-radius: 18px;
+  color: var(--color-white);
+  margin-left: 2%;
+}
+
+.applicationTitle, .userName{
+  composes: mediumText from './../../../Global_Styles/fontsStyles.module.css';
+  color: var(--color-gray);
+
+}
+
+.applicationSubTitle, .roleDescript{
+  composes: mediumSmallText from './../../../Global_Styles/fontsStyles.module.css';
+  color: var(--color-gray);
+}
+
+.description{
+  composes: tinyText from './../../../Global_Styles/fontsStyles.module.css';
+  color: var(--color-gray);
+}
+
+.roleDescript, .description{
+  margin-top: 1%;
+  background-color: var(--light-gray);
+  padding: 1% 2%;
+  border-radius: 15px;
+}
+
+.buttonsBlock{
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.buttonAccept, .buttonReject{
+  composes: smallText from './../../../Global_Styles/fontsStyles.module.css';
+  padding: 2% 10%;
+  color: var(--color-white);
+  border-radius: 5px;
+  cursor: pointer;
+  width: max-content;
+}
+
+.buttonAccept{
+  background-color: var(--color-green);
+}
+
+.buttonAccept:hover{
+  background-color: var(--dark-green);
+}
+
+.buttonReject{
+  background-color: var(--color-red);
+}
+
+.buttonReject:hover{
+  background-color: var(--dark-red);
+}
+
+@media (max-width: 754px) {
+  .mainContainer{
+    width: 70vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .mainContainer{
+    width: 80vw;
+  }
+}
+
+@media (max-width: 380px) {
+  .mainContainer{
+    width: 100%
+  }
+
+}

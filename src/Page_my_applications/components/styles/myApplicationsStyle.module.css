@@ -67,3 +67,7 @@
   height: 50%;
   width: 100%;
 }
+
+.newApplicationsBlock{
+  border-bottom: 2px solid var(--light-gray);
+}
