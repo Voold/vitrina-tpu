@@ -5,15 +5,6 @@
     z-index: auto;
 }
 
-/* #over_navbar:hover .dark{
-    background-color: #000;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    opacity: 0.5;
-} */
-
 .top_cont_forUIpage{
     position: relative;
 }
@@ -24,4 +15,8 @@
     flex-direction: row;
     height: auto;
     min-height: 200vh;
+}
+
+@media (max-width: 650px) {
+    
 }
