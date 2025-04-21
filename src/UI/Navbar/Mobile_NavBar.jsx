@@ -7,7 +7,6 @@ const Mobile_NavBar = (props) => {
 
     return(
         <div className={style.wrap}>
-        <div>
             <div className={style.navBody}>
                 <ul>
                   <Link to="/MyProfil">
@@ -247,7 +246,6 @@ const Mobile_NavBar = (props) => {
 
                 </ul>
             </div>
-        </div>
         </div>
     )
 

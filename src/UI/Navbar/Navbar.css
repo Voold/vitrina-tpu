@@ -13,6 +13,9 @@
     src: url("/src/Shrifts/ALSTPU.otf") format("opentype");
 }
 
+/* #giga_nav_wrap{
+    height: max-content;
+} */
 
 #over_navbar{
     position: relative;
@@ -131,12 +134,19 @@
     transition: 500ms;
 }
 
-.main_navbar_wrap{
+/* .main_navbar_wrap{
     position: absolute;
-}
+} */
 
 @media (max-width: 650px) {
     #over_navbar{
+        display: block;
+        position: absolute;
+        width: 0;
+        top: 0;
+    }
+
+    #over_navbar > .link:first-child{
         display: none;
     }
 }

@@ -8,7 +8,7 @@ import Mobile_NavBar from "./Mobile_NavBar";
 export default function Page(props) {
 
   return (
-    <div>
+
       <div id="over_navbar">
 
 
@@ -274,9 +274,8 @@ export default function Page(props) {
         </div>
         </a>
 
-        
+        <Mobile_NavBar {...props}/>
       </div>
-      <Mobile_NavBar {...props} />
-    </div>
+
   );
 }
