@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState} from 'react';
 import "./Analytics_main.css"
 import Conteiner_Analytics from "../Conteiner_Analytics/Conteiner_Analytics";
 import Loading from '../../UI/Loading/Loading';
-import CatalogProjectFooter from '../../KATALOGI/CatalogProjectFooter';
+import CatalogProjectFooter from '../../UI/projectFooter/CatalogProjectFooter.jsx';
 import Page_Project from '../../Page_project';
 import Search from '../../UI/Search/Search';
 import User_card from '../User_card/User_card';

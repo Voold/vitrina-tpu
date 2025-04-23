@@ -39,7 +39,7 @@
 
 .dspNone{
   z-index: 1022;
-  display: hidden;
+  display: none;
   position: absolute;
   margin: auto;
   top: -1000px;

@@ -1,5 +1,5 @@
 
-import CatalogProjectFooter from "../../KATALOGI/CatalogProjectFooter";
+import CatalogProjectFooter from "../projectFooter/CatalogProjectFooter";
 import Conteiner_Analytics from "../../Page_analytics/Conteiner_Analytics/Conteiner_Analytics";
 import Popup_Content_Application from "../../Page_my_applications/components/Popup_Content_Application";
 import Page_Project from "../../Page_project";

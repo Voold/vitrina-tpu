@@ -20,7 +20,7 @@
     top:0;
     left:0;
     position: absolute;
-    z-index: 120;
+    z-index: 1200;
 }
 
 .popUP_filter_back{

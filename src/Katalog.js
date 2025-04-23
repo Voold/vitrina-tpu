@@ -8,7 +8,7 @@ import "./KATALOGI/main_katalog.css";
 import Page_Project from './Page_project.js';
 import Filtr_Popup from './KATALOGI/Filtr/Filtr_popup.js';
 import HelpBut from './HelpBut.js';
-import CatalogProjectFooter from './KATALOGI/CatalogProjectFooter.jsx';
+import CatalogProjectFooter from './UI/projectFooter/CatalogProjectFooter.jsx';
 // import ProjectsList from './KATALOGI/ProjectsList.js';
 
 const p = [<Link to="/Project"><Conteiner/></Link>] ;

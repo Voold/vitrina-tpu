@@ -93,6 +93,7 @@
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
+    overflow: hidden;
 }
 .cont-project{
     font-family: ALS Sirius;

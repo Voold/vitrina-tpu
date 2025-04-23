@@ -31,20 +31,27 @@ const CatalogProjectFooter = (props) => {
 
 
     const FOOTERbutClckHandler = (event) => {
+        if(event.target.innerHTML === '&lt;&lt;'){
+            SetCurrentCount(0);
+            props.onSelectNewPage(0);
+            return;
+        }
         SetCurrentCount(event.target.innerHTML-1)
         props.onSelectNewPage(event.target.innerHTML-1);
     }
     
     return (
         <div className = {style.box}>
+
             {/* <HelpBut info={maxCount}/> */}
             {!(maxCount === 1) && !(maxCount === 0) && 
             <div className = {style.catalog_page_counter}>
+                {numbers0[0]+1>1 && <a class="link" href="#start"><button onClick={FOOTERbutClckHandler} className={style.button_footer}>{'<<'}</button></a>}
                 {numbers0.map(data => <a class="link" href="#start"><button onClick={FOOTERbutClckHandler} className={style.button_footer}>{data+1}</button></a>)}
                 {<a class="link" href="#start"><button onClick={FOOTERbutClckHandler} className={`${style.button_footer} ${style.SELECTED_BUT_FOOTER}`}>{currentCount+1}</button></a>}
                 {numbers1.map(data => <a class="link" href="#start"><button onClick={FOOTERbutClckHandler} className={style.button_footer}>{data+1}</button></a>)}
-                {((maxCount) - currentCount+1 > 6) && <div className={`${style.button_footer} ${style.points_but}`}>...</div>}
-                {((maxCount) != currentCount+1) && <a class="link" href="#start"><button onClick={FOOTERbutClckHandler} className={style.button_footer}>{maxCount}</button></a>}
+                {((maxCount) - currentCount+1 > 6) && <div className={`${style.button_footer} ${style.points_but}`}>{'...'}</div>}
+                {((maxCount) !== currentCount+1) && <a class="link" href="#start"><button onClick={FOOTERbutClckHandler} className={style.button_footer}>{maxCount}</button></a>}
             </div>}
         </div>
     )
