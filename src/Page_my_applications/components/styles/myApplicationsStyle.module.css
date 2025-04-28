@@ -6,7 +6,7 @@
   margin: 0 auto;
   margin-top: 2%;
   max-width: 1000px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 .iterFontStyle {
@@ -20,7 +20,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5%;
+  margin-bottom: 6%;
 }
 
 .titleBlock {
@@ -34,7 +34,6 @@
 }
 .subLabel {
   display: inline-flex;
-  align-items: center;
   align-items: center;
   composes: mediumSmallText from './../../../Global_Styles/fontsStyles.module.css';
 }
@@ -71,4 +70,15 @@
 
 .newApplicationsBlock{
   border-bottom: 2px solid var(--light-gray);
+}
+
+@media (max-width: 464px) {
+  .subTopBlock {
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    width: 50%;
+    max-width: 250px;
+    min-width: max-content;
+  }
 }

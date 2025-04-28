@@ -68,7 +68,7 @@ function App() {
           <Route path='/Analytics' element={<Analytics autorization={autorization} apiAdress = {apiAdress} />}/>
           <Route path='/Users_lectures' element={<Users_page autorization={autorization} apiAdress = {apiAdress} />}/>
           <Route path='/Users_students' element={<Users_page autorization={autorization} apiAdress = {apiAdress} />}/>
-          <Route path='/MyProfil_2' element={<MyProfile_2 autorization={autorization} apiAdress = {apiAdress} />}/>
+          {/* <Route path='/MyProfil_2' element={<MyProfile_2 autorization={autorization} apiAdress = {apiAdress} />}/> */}
           <Route path='/Error' element = {<Error error = "Oshibka123"/>}/>
           {/* <Link to={'/Error'} state={{ from: "404" }}></Link> */}
           {/*

@@ -3,7 +3,6 @@ import "../UI/commonUI/flex_type_page.css"
 import Navbar from "../UI/Navbar/Navbar.js";
 import Header from "../UI/Header/Header.js";
 import Application_main from "./components/Application_main.jsx";
-import Mobile_NavBar from "../UI/Navbar/Mobile_NavBar.jsx";
 
 export default function Page_my_applications(props) {
 

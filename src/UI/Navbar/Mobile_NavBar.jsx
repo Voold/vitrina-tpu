@@ -201,7 +201,7 @@ const Mobile_NavBar = (props) => {
                       </li>
                   </Link>}
                   
-                  {( props.user_status == 2) && <Link to="/MyProfil_2">
+                  {/* {( props.user_status == 2) && <Link to="/MyProfil_2">
                       <li className={style.navbar_el}>
                         <svg className={style.icon} viewBox="0 0 26.6211 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <defs />
@@ -220,7 +220,7 @@ const Mobile_NavBar = (props) => {
                         <p class={style.navbar_label}>МоЙ Профиль 2</p>
                       </li>
                   </Link>
-                  }
+                  } */}
 
                   <Link to="/">
                       <li className={`${style.navbar_el} ${style.navbar_Exit}`}>

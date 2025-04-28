@@ -6,8 +6,8 @@
   .wrap{
     display: block;
     transform: none;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    bottom: 0;
   }
 
   .navBody{

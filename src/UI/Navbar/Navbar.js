@@ -6,6 +6,7 @@ import "./Navbar.css";
 import Mobile_NavBar from "./Mobile_NavBar";
 
 export default function Page(props) {
+  // ПОТОМ НАДО ВЫНЕСТИ ЭЛЕМЕНТ СПИСКА В ОТДЕЛЬНЫЙ КОМПОНЕНТ, ИБО ЧТО ЗА ЖЕСТЬ
 
   return (
 
@@ -217,7 +218,7 @@ export default function Page(props) {
                 <p class="navbar_label">Аналитика</p>
               </div>
             </Link>}
-
+{/* 
             {( props.user_status == 2) && <Link to="/MyProfil_2">
               <div className="navbar_profil navbar_el">
                 <div className="IcoN">
@@ -239,7 +240,7 @@ export default function Page(props) {
                 <p class="navbar_label">МоЙ Профиль 2</p>
               </div>
             </Link>
-            }
+            } */}
 
 
           </div>

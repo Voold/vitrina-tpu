@@ -143,8 +143,10 @@
     #over_navbar{
         display: block;
         position: absolute;
+        transform: none;
         width: 0;
         top: 0;
+        left: 0;
     }
 
     #over_navbar > .link:first-child{

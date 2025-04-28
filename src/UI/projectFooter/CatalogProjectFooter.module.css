@@ -17,7 +17,7 @@
     margin: 0 auto;
     display: flex;
     justify-content:space-evenly;
-    gap: 5%;
+    /* gap: 5%; */
 }
 
 .button_footer{
