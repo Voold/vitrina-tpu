@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.dcb49d84.css",
-    "main.js": "/static/js/main.b3c24f6c.js",
+    "main.css": "/static/css/main.07a077be.css",
+    "main.js": "/static/js/main.9f3a5069.js",
+    "static/media/load.mp4": "/static/media/load.4b74a37dd4da312ba32f.mp4",
     "static/media/ALS_Sirius_Bold_0.95.otf": "/static/media/ALS_Sirius_Bold_0.95.638d7e3f3eca33ff3fb1.otf",
     "static/media/ALS_Sirius_Regular_0.95.otf": "/static/media/ALS_Sirius_Regular_0.95.c41245c8e1e7683436fa.otf",
     "static/media/le_zalupa.svg": "/static/media/le_zalupa.113c1b2bdcffe7110453201699fd77c7.svg",
     "static/media/ALSTPU.otf": "/static/media/ALSTPU.e3df9a961b111b1a23e0.otf",
-    "static/media/load.gif": "/static/media/load.742ff89c4ca23122d0ab.gif",
     "static/media/ЛоготипВитринаПроектов.svg": "/static/media/ЛоготипВитринаПроектов.097d3df6d6a414384b4ebad1dea39158.svg",
     "static/media/ЛогоТПУ.svg": "/static/media/ЛогоТПУ.ba8240ed8ddb3f9a83941d2c89c4ba8b.svg",
     "static/media/icon_for_mobile_adaptation_figma.svg": "/static/media/icon_for_mobile_adaptation_figma.589be28c9cb4a91ea910.svg",
@@ -15,11 +15,11 @@
     "static/media/calendar.svg": "/static/media/calendar.b01a8451d1bc0c294259edaa8e0dd112.svg",
     "index.html": "/index.html",
     "static/media/picture.svg": "/static/media/picture.ff3b7e503f9c02f4f4c6.svg",
-    "main.dcb49d84.css.map": "/static/css/main.dcb49d84.css.map",
-    "main.b3c24f6c.js.map": "/static/js/main.b3c24f6c.js.map"
+    "main.07a077be.css.map": "/static/css/main.07a077be.css.map",
+    "main.9f3a5069.js.map": "/static/js/main.9f3a5069.js.map"
   },
   "entrypoints": [
-    "static/css/main.dcb49d84.css",
-    "static/js/main.b3c24f6c.js"
+    "static/css/main.07a077be.css",
+    "static/js/main.9f3a5069.js"
   ]
 }
