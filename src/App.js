@@ -46,16 +46,16 @@ function App() {
 
 
   /*const [data, setData] = useState(<Katalog projects={INNITIAL_DATA} autorization = { autorization }/>);*/
-  const [data, setData] = useState(<Loading></Loading>);
+  const [data, setData] = useState(<Katalog load={<Loading></Loading>} projects={[]} autorization = { autorization }/>);
 
   useEffect(() => {
-    fetch(apiAdress + '/catalog/pending')
-      .then(response => response.json())
-      .then(data => setData(<Katalog projects={data} autorization = { autorization } apiAdress = {apiAdress} />))
-       .catch(error => console.error(error), setData(<Katalog projects={[]} autorization = { autorization } />));
-      /* .catch(error => console.error(error), () => {return (redirect("/Error"))}); */
+      setTimeout(() => {
+        fetch(apiAdress + '/catalog/pending')
+          .then(response => response.json())
+          .then(data => setData(<Katalog projects={data} autorization = { autorization } apiAdress = {apiAdress} />))
+          .catch(error => console.error(error), setData(<Katalog projects={[]} autorization = { autorization } />));
+        }, 1500);
   }, []);
-
 
   return (
     <>

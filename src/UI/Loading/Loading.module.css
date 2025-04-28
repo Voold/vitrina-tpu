@@ -1,0 +1,13 @@
+.loadingWrapper{
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    max-height: 700px;
+    
+    width: 100%;
+}
+
+.loadingVideo{
+    width: 20vw;
+    min-width: 250px;
+}

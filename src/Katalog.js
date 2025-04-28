@@ -2579,8 +2579,10 @@ function Try( props ) {
                             
                             <div class = "Filtr_btn"></div>
 
+                        {/* Какой-то супер нерациональный мув с отображением загрузки, потом надо переделать */}
+                        {props.load && props.load}
 
-                        <div class="catalog_projects_box">
+                        {!props.load && <div class="catalog_projects_box">
                           {(filteredData.length === 0) && <div class = "sad_smile_wrapper"> 
 
                           <svg viewBox="0 0 81 55" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2593,6 +2595,9 @@ function Try( props ) {
                           {/* <label class = "sad_smile_label">Шо ты, лысый? Плаки-плаки, или нормалдаки????</label>   */}
                             
                           </div>}
+
+                          
+
                           <a class="link" href="#top">
                                                         {filteredData.map(data => (
                                         <Conteiner
@@ -2601,27 +2606,11 @@ function Try( props ) {
                                             GoToProject = {GoToProjectHandler} />
                                             ))}
                                             
-                                            <Conteiner
-                                            card_data={{
-                                              "id": 0,
-                                              "title": "Название проекта",
-                                              "source": "Какой-то источник проекта",
-                                              "hashtags": [ "Хэштег1", "Хэштег2" ],
-                                              "type": "УИРС",
-                                              "school": "ИШИТР",
-                                              "roles": [ "Роль", "Роль 1", "Роль 2" ],
-                                              "date_end": "2005-04-17",
-                                              "duration": 5,
-                                              "course": ["1","2"],
-                                              "get_member_end" : "2005-04-17",
-                                            }} 
-                                            GoToProject = {GoToProjectHandler} />
-
                                             </a>
 
                             <CatalogProjectFooter onSelectNewPage={SelectNewPageHandler} lengthThis={KatallogData.maxCount} CurrentPage={KatallogData.current_position}/>
 
-                          </div>
+                          </div>}
                           </div>
                         </div>
                       </div>
